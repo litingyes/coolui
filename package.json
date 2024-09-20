@@ -1,0 +1,28 @@
+{
+  "name": "wowui",
+  "description": "Opinionated and lightweight ui library",
+  "author": "litingyes",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "unocss",
+    "css"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "format": "eslint --fix .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.7.0",
+    "@unocss/eslint-plugin": "^0.62.4",
+    "eslint": "^9.10.0",
+    "eslint-plugin-format": "^0.1.2",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "typescript": "^5.6.2"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
