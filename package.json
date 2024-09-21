@@ -1,6 +1,7 @@
 {
   "name": "@coolui/monorepo",
   "type": "module",
+  "private": true,
   "description": "Opinionated and lightweight ui library",
   "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
   "license": "MIT",
