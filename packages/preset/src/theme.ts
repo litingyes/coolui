@@ -2,25 +2,20 @@ import type { Theme } from 'unocss/preset-mini'
 import type { PresetCoolOptions } from './index'
 import { theme } from 'magic-color'
 
+function formatTheme(name: string, color: string) {
+  return theme(color, {
+    type: 'rgb',
+    render: ([key, value]) => [String(key), `var(--cool-theme-${name}-${key}, ${value})`],
+  })
+}
+
 export function createTheme(options: PresetCoolOptions): Theme {
-  const primaryColors = theme(options.theme.primary, {
-    type: 'rgb',
-  })
-  const coolColors = theme(options.theme.cool, {
-    type: 'rgb',
-  })
-  const infoColors = theme(options.theme.info, {
-    type: 'rgb',
-  })
-  const successColors = theme(options.theme.success, {
-    type: 'rgb',
-  })
-  const warningColors = theme(options.theme.warning, {
-    type: 'rgb',
-  })
-  const errorColors = theme(options.theme.error, {
-    type: 'rgb',
-  })
+  const primaryColors = formatTheme('primary', options.theme.primary)
+  const coolColors = formatTheme('cool', options.theme.cool)
+  const infoColors = formatTheme('info', options.theme.info)
+  const successColors = formatTheme('success', options.theme.success)
+  const warningColors = formatTheme('warning', options.theme.warning)
+  const errorColors = formatTheme('error', options.theme.error)
 
   return {
     colors: {
