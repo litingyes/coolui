@@ -8,6 +8,17 @@ hero:
   image:
     src: /logo.svg
     alt: Cool UI
+  actions:
+    - theme: brand
+      text: Guide
+      link: /guide/introduction
+    - theme: alt
+      text: Components
+      link: /components/button
+    - theme: alt
+      text: Github
+      link: https://github.com/litingyes/coolui.git
+      target: _blank
 
 features:
   - title: Pure atomic

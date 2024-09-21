@@ -35,11 +35,28 @@ export default defineConfig({
       themeConfig: {
         nav: [
           {
+            text: 'Guide',
+            link: '/guide/introduction',
+          },
+          {
             text: 'Components',
             link: '/components/button',
           },
         ],
         sidebar: [
+          {
+            text: 'Guide',
+            items: [
+              {
+                text: 'Introduction',
+                link: '/guide/introduction',
+              },
+              {
+                text: 'Getting start',
+                link: '/guide/getting-start',
+              },
+            ],
+          },
           {
             text: 'Components',
             items: [
@@ -58,11 +75,28 @@ export default defineConfig({
       themeConfig: {
         nav: [
           {
+            text: '指南',
+            link: '/zh-CN/guide/introduction',
+          },
+          {
             text: '组件',
             link: '/zh-CN/components/button',
           },
         ],
         sidebar: [
+          {
+            text: '指南',
+            items: [
+              {
+                text: '介绍',
+                link: '/zh-CN/guide/introduction',
+              },
+              {
+                text: '快速开始',
+                link: '/zh-CN/guide/getting-start',
+              },
+            ],
+          },
           {
             text: '组件',
             items: [

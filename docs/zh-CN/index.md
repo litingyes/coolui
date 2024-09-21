@@ -8,6 +8,17 @@ hero:
   image:
     src: /logo.svg
     alt: Cool UI
+  actions:
+    - theme: brand
+      text: 指南
+      link: /zh-CN/guide/introduction
+    - theme: alt
+      text: 组件
+      link: /zh-CN/components/button
+    - theme: alt
+      text: Github
+      link: https://github.com/litingyes/coolui.git
+      target: _blank
 
 features:
   - title: CSS 原子化
