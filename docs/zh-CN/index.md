@@ -17,6 +17,6 @@ features:
     icon: <i class="i-fxemoji:artistpalette w-1em h-1em"></i>
     details: 支持自定义主题颜色
   - title: UI 设计
-    icon: <div class="i-logos:figma w-1em h-1em"></i>
+    icon: <i class="i-logos:figma w-1em h-1em"></i>
     details: 纯粹、简洁、美观的交互设计
 ---
