@@ -1,11 +1,11 @@
 {
-  "name": "@wowui/preset",
+  "name": "@coolui/preset",
   "version": "0.0.0",
   "description": "Unocss preset for Wow UI",
   "author": "litingyes",
   "license": "MIT",
   "keywords": [
-    "wowui",
+    "coolui",
     "unocss",
     "unocss-preset"
   ],

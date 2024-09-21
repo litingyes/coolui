@@ -1,12 +1,13 @@
 {
-  "name": "wowui",
+  "name": "coolui",
   "description": "Opinionated and lightweight ui library",
   "author": "litingyes",
   "license": "MIT",
   "keywords": [
     "ui",
     "unocss",
-    "css"
+    "css",
+    "coolui"
   ],
   "scripts": {
     "lint": "eslint .",
