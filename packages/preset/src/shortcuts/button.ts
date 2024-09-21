@@ -9,7 +9,7 @@ export const button: UserShortcuts<Theme> = [
   },
   // size
   [
-    /^btn-(.*)$/,
+    /^btn-(sm|md|lg)$/,
     ([,c]) => {
       switch (c) {
         case 'sm': {
@@ -21,15 +21,12 @@ export const button: UserShortcuts<Theme> = [
         case 'lg': {
           return 'px-4 py-1.5 rounded-2'
         }
-        default: {
-          return ''
-        }
       }
     },
   ],
   // variant
   [
-    /^btn-(.*)$/,
+    /^btn-(solid|outline|ghost)$/,
     ([,c]) => {
       switch (c) {
         case 'solid': {
@@ -40,9 +37,6 @@ export const button: UserShortcuts<Theme> = [
         }
         case 'ghost': {
           return 'text-primary-500 hover:bg-cool-100 active:bg-cool-200'
-        }
-        default: {
-          return ''
         }
       }
     },
