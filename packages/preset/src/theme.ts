@@ -1,8 +1,8 @@
 import type { Theme } from 'unocss/preset-mini'
-import type { PresetWowOptions } from './index'
+import type { PresetCoolOptions } from './index'
 import { theme } from 'magic-color'
 
-export function createTheme(options: PresetWowOptions): Theme {
+export function createTheme(options: PresetCoolOptions): Theme {
   const primaryColors = theme(options.theme.primary, {
     type: 'rgb',
   })

@@ -3,7 +3,7 @@ import { defu } from 'defu'
 import { definePreset, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { createTheme } from './theme'
 
-export interface PresetWowOptions {
+export interface PresetCoolOptions {
   theme: {
     primary: string
     cool: string
@@ -16,7 +16,7 @@ export interface PresetWowOptions {
   prefix: PresetMiniOptions['variablePrefix']
 }
 
-const defaultOptions: PresetWowOptions = {
+const defaultOptions: PresetCoolOptions = {
   theme: {
     primary: 'blue',
     cool: 'gray',
@@ -27,14 +27,14 @@ const defaultOptions: PresetWowOptions = {
 
   },
   dark: 'class',
-  prefix: 'wow',
+  prefix: 'cool',
 }
 
-export default definePreset<Partial<PresetWowOptions>, Theme>((options = {}) => {
-  const resolvedOptions = defu<PresetWowOptions, [PresetWowOptions]>(options, defaultOptions)
+export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) => {
+  const resolvedOptions = defu<PresetCoolOptions, [PresetCoolOptions]>(options, defaultOptions)
 
   return {
-    name: 'wow',
+    name: 'cool',
     presets: [
       presetUno({
         dark: resolvedOptions.dark,
