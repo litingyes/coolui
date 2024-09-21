@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "Attributify",
     "unocss"
   ],
   // Disable the default formatter, use eslint instead
