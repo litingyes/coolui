@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.0-beta.3
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.2...v0.1.0-beta.3)
+
+### 🤖 CI
+
+- **release:** Bump monorepo versions ([6873d2d](https://github.com/litingyes/coolui/commit/6873d2d))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.2
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.1...v0.1.0-beta.2)
