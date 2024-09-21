@@ -27,7 +27,7 @@ const defaultOptions: PresetCoolOptions = {
 
   },
   dark: 'class',
-  prefix: 'cool',
+  prefix: 'cool-',
 }
 
 export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) => {
