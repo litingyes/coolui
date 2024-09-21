@@ -17,7 +17,7 @@
     "format": "eslint --fix .",
     "build": "pnpm --filter=./packages/* run build",
     "changelogen": "changelogen --output CHANGELOG.md -r $npm_package_version",
-    "release-prepare": "pnpm build && pnpm changelogen",
+    "release-prepare": "pnpm build && pnpm changelogen && git add CHANGELOG.md",
     "release": "bumpp",
     "prepare": "husky"
   },
