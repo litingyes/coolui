@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Cool UI',
   description: 'Opinionated and lightweight ui library',
+  lastUpdated: true,
   head: [
     [
       'link',
@@ -15,12 +16,17 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Liting',
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/litingyes/coolui.git' },
-    ],
     search: {
       provider: 'local',
     },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/litingyes/coolui.git' },
+    ],
+    editLink: {
+      pattern: 'https://github.com/litingyes/coolui/edit/main/docs/:path',
+      text: 'Edit this page on GitHub',
+    },
+    externalLinkIcon: true,
   },
   locales: {
     'root': {
