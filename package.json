@@ -23,7 +23,7 @@
     "docs:preview": "pnpm --filter=docs run preview",
     "changelogen": "changelogen --output CHANGELOG.md -r $npm_package_version",
     "release-prepare": "pnpm build && pnpm changelogen && git add CHANGELOG.md",
-    "release": "bumpp",
+    "release": "bumpp -r",
     "prepare": "husky"
   },
   "devDependencies": {
