@@ -5,7 +5,7 @@ import type { Theme } from 'unocss/preset-mini'
 
 export const button: UserShortcuts<Theme> = [
   {
-    btn: 'inline-flex items-center gap-1 text-sm transition duration-300 active:scale-106 [&+.btn]:ml-2',
+    btn: 'inline-flex items-center gap-1 text-sm transition duration-300 active:scale-106 [&+.btn,&+[btn]]:ml-2',
   },
   // size
   [
