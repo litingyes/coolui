@@ -13,6 +13,7 @@
     "unocss": "catalog:"
   },
   "dependencies": {
+    "defu": "^6.1.4",
     "magic-color": "^1.2.2"
   }
 }

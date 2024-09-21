@@ -4,12 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-catalogs:
-  default:
-    unocss:
-      specifier: ^0.62.4
-      version: 0.62.4
-
 importers:
 
   .:
@@ -42,6 +36,9 @@ importers:
 
   packages/preset:
     dependencies:
+      defu:
+        specifier: ^6.1.4
+        version: 6.1.4
       magic-color:
         specifier: ^1.2.2
         version: 1.2.2
