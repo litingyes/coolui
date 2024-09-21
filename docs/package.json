@@ -5,6 +5,7 @@
   "private": true,
   "description": "Docs for coolui",
   "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
+  "homepage": "https://coolui.litingyes.top",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
