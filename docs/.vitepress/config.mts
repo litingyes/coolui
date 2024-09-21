@@ -1,5 +1,3 @@
-import presetCoolui from '@coolui/preset'
-import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -28,19 +26,48 @@ export default defineConfig({
     'root': {
       label: 'English',
       lang: 'en-US',
+      themeConfig: {
+        nav: [
+          {
+            text: 'Components',
+            link: '/components/button',
+          },
+        ],
+        sidebar: [
+          {
+            text: 'Components',
+            items: [
+              {
+                text: 'Button',
+                link: '/components/button',
+              },
+            ],
+          },
+        ],
+      },
     },
     'zh-CN': {
       label: '简体中文',
       lang: 'zh-CN',
-    },
-  },
-  vite: {
-    plugins: [
-      UnoCSS({
-        presets: [
-          presetCoolui,
+      themeConfig: {
+        nav: [
+          {
+            text: '组件',
+            link: '/zh-CN/components/button',
+          },
         ],
-      }),
-    ],
+        sidebar: [
+          {
+            text: '组件',
+            items: [
+              {
+                text: '按钮 Button',
+                link: '/zh-CN/components/button',
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 })

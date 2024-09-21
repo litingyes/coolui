@@ -1,6 +1,7 @@
 import type { PresetMiniOptions, Theme } from 'unocss/preset-mini'
 import { defu } from 'defu'
 import { definePreset, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { shortcuts } from './shortcuts'
 import { createTheme } from './theme'
 
 export interface PresetCoolOptions {
@@ -65,5 +66,6 @@ export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) =>
         },
       }
     },
+    shortcuts,
   }
 })

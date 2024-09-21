@@ -57,5 +57,8 @@
     "scss",
     "pcss",
     "postcss"
+  ],
+  "unocss.languageIds": [
+    "typescript"
   ]
 }
