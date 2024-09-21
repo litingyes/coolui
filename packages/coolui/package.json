@@ -1,18 +1,24 @@
 {
-  "name": "@coolui/preset",
+  "name": "coolui",
+  "type": "module",
   "version": "0.0.0",
-  "description": "Unocss preset for Wow UI",
+  "description": "Opinionated and lightweight ui library",
   "author": "litingyes",
   "license": "MIT",
   "keywords": [
-    "coolui",
+    "ui",
     "unocss",
-    "unocss-preset"
+    "css",
+    "coolui"
   ],
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs"
+    },
+    "./preset": {
+      "types": "./dist/preset.d.mts",
+      "import": "./dist/preset.d.mts"
     }
   },
   "module": "./dist/index.mjs",
@@ -20,11 +26,7 @@
   "scripts": {
     "build": "unbuild"
   },
-  "peerDependencies": {
-    "unocss": "catalog:"
-  },
   "dependencies": {
-    "defu": "^6.1.4",
-    "magic-color": "^1.2.2"
+    "@coolui/preset": "workspace:*"
   }
 }

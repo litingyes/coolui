@@ -1,5 +1,6 @@
 {
-  "name": "coolui",
+  "name": "@coolui/monorepo",
+  "type": "module",
   "description": "Opinionated and lightweight ui library",
   "author": "litingyes",
   "license": "MIT",
@@ -12,6 +13,7 @@
   "scripts": {
     "lint": "eslint .",
     "format": "eslint --fix .",
+    "build": "pnpm --filter=./packages/* run build",
     "prepare": "husky"
   },
   "dependencies": {
@@ -19,12 +21,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.0",
+    "@types/node": "20",
     "@unocss/eslint-plugin": "^0.62.4",
     "eslint": "^9.10.0",
     "eslint-plugin-format": "^0.1.2",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "unbuild": "^2.0.0"
   },
   "lint-staged": {
     "*": "eslint --fix"
