@@ -3,8 +3,13 @@
   "type": "module",
   "version": "0.0.0",
   "description": "Opinionated and lightweight ui library",
-  "author": "litingyes",
+  "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/litingyes/coolui.git",
+    "directory": "packages/coolui"
+  },
   "keywords": [
     "ui",
     "unocss",
