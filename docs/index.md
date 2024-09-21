@@ -11,12 +11,12 @@ hero:
 
 features:
   - title: Pure atomic
-    icon: <div class="i-vscode-icons:file-type-unocss w-1em h-1em" />
+    icon: <i class="i-vscode-icons:file-type-unocss w-1em h-1em"></i>
     details: No need to import additional css files based on <a href="https://unocss.dev/" target="_blank">UnoCSS</a>
   - title: Dynamic theme
-    icon: <div class="i-fxemoji:artistpalette w-1em h-1em" />
+    icon: <i class="i-fxemoji:artistpalette w-1em h-1em"></i>
     details: Support custom theme colors
   - title: UI design
-    icon: <div class="i-logos:figma w-1em h-1em" />
+    icon: <i class="i-logos:figma w-1em h-1em" ></i>
     details: Pure, simple and beautiful interactive design
 ---
