@@ -80,6 +80,10 @@ export default defineConfig({
                     text: 'Input',
                     link: '/components/input',
                   },
+                  {
+                    text: 'Checkbox',
+                    link: '/components/checkbox',
+                  },
                 ],
               },
             ],
@@ -137,6 +141,10 @@ export default defineConfig({
                   {
                     text: '输入框 Input',
                     link: '/zh-CN/components/input',
+                  },
+                  {
+                    text: '复选框 Checkbox',
+                    link: '/zh-CN/components/checkbox',
                   },
                 ],
               },

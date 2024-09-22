@@ -2,6 +2,7 @@ import type { Theme } from 'unocss/preset-mini'
 import { toArray, type UserShortcuts } from 'unocss'
 import { badge } from './badge'
 import { button } from './button'
+import { checkbox } from './checkbox'
 import { input } from './input'
 
 export const shortcuts: UserShortcuts<Theme> = [
@@ -11,4 +12,5 @@ export const shortcuts: UserShortcuts<Theme> = [
 
   // form
   ...toArray(input),
+  ...toArray(checkbox),
 ]
