@@ -6,43 +6,30 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const checkbox: UserShortcuts<Theme> = [
   {
-    'checkbox': 'relative inline-flex items-center gap-1 align-middle *:cursor-pointer [&+.checkbox,&+[checkbox]]:ml-2',
-    'checkbox-disabled': '!pointer-events-none !grayscale-50',
-    'checkbox-readonly': '!pointer-events-none',
+    checkbox: 'relative cursor-pointer appearance-none m-0 text-primary-700 i-mingcute:square-line before:(absolute left-0 top-1/2 -translate-y-1/2)  checked:(text-primary-700 i-mingcute:checkbox-fill) indeterminate:(text-primary-700 i-mingcute:minus-square-line)',
   },
-  // size
+  // size & variant
   [
-    /^checkbox-input-(sm|md|lg)$/,
-    ([,c]) => {
+    /^checkbox-(.*)$/,
+    ([,c], { theme }) => {
       switch (c) {
         case 'sm': {
-          return 'text-base'
+          return 'size-4 text-base'
         }
         case 'md' : {
-          return 'text-xl'
+          return 'size-5 text-xl'
         }
         case 'lg': {
-          return 'text-2xl'
+          return 'size-6 text-2xl'
         }
       }
-    },
-    {
-      autocomplete: 'checkbox-input-<size>',
-    },
-  ],
-  // variant
-  [
-    /^checkbox-input((?!.*(sm|md|lg))(-.*))?$/,
-    ([,c], { theme }) => {
-      const key = resolveThemeKey(theme, c?.slice(1))
 
-      return withThemeKey('appearance-none m-0 relative text-primary-700 i-mingcute:square-line before:(absolute left-0 top-1/2 -translate-y-1/2) checked:(text-primary-700 i-mingcute:checkbox-fill) indeterminate:(text-primary-700 i-mingcute:minus-square-line)', key)
+      const key = resolveThemeKey(theme, c)
+
+      return withThemeKey('text-primary-700  checked:(text-primary-700 i-mingcute:checkbox-fill) indeterminate:(text-primary-700 i-mingcute:minus-square-line)', key)
     },
     {
-      autocomplete: [
-        'checkbox-input',
-        'checkbox-input-$colors',
-      ],
+      autocomplete: 'checkbox-(<size>|$colors)',
     },
   ],
 ]
