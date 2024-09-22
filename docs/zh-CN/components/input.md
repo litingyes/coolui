@@ -24,22 +24,30 @@
 
 ## 只读
 
-<input input="~ sm outline readonly" value="outline" />
-<input input="~ md soft readonly" value="soft" />
+<div class="form-readonly">
+  <input input="~ sm outline readonly" value="outline" />
+  <input input="~ md soft readonly" value="soft" />
+</div>
 
 ```html
-<input input="~ sm outline readonly" />
-<input input="~ md soft readonly" />
+<div class="form-readonly">
+  <input input="~ sm outline readonly" value="outline" />
+  <input input="~ md soft readonly" value="soft" />
+</div>
 ```
 
 ## 禁用
 
-<input input="~ sm outline disabled" value="outline" />
-<input input="~ md soft disabled" value="soft" />
+<div class="form-disabled">
+  <input input="~ sm outline disabled" />
+  <input input="~ md soft disabled" />
+</div>
 
 ```html
-<input input="~ sm outline disabled" />
-<input input="~ md soft disabled" />
+<div class="form-disabled">
+  <input input="~ sm outline disabled" />
+  <input input="~ md soft disabled" />
+</div>
 ```
 
 ## 颜色

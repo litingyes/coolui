@@ -6,9 +6,7 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const input: UserShortcuts<Theme> = [
   {
-    'input': 'inline-flex items-center gap-2 align-middle cursor-text [&+.input,&+[input]]:ml-2',
-    'input-disabled': '!pointer-events-none !grayscale-50',
-    'input-readonly': '!pointer-events-none',
+    input: 'inline-flex items-center gap-2 align-middle cursor-text [&+.input,&+[input]]:ml-2',
   },
   // size
   [
