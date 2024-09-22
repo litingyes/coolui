@@ -6,7 +6,7 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const button: UserShortcuts<Theme> = [
   {
-    'btn': 'inline-flex items-center gap-2 cursor-pointer text-sm transition duration-300 active:scale-106 [&+.btn,&+[btn]]:ml-2',
+    'btn': 'inline-flex items-center gap-2 cursor-pointer text-sm align-middle transition duration-300 active:scale-106 [&+.btn,&+[btn]]:ml-2',
     'btn-disabled': '!pointer-events-none !grayscale-50',
   },
   // size

@@ -64,7 +64,7 @@
 
 <div badge="~ md solid" class="rounded-full">round</div>
 <div badge="~ md outline" class="border-dashed">dashed</div>
-<div badge="~ md soft" class="border-dashed">
+<div badge="~ md soft">
 <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
 Icon + Text
 </div>
@@ -72,7 +72,7 @@ Icon + Text
 ```html
 <div badge="~ md solid" class="rounded-full">round</div>
 <div badge="~ md outline" class="border-dashed">dashed</div>
-<div badge="~ md soft" class="border-dashed">
+<div badge="~ md soft">
   <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
   Icon + Text
 </div>

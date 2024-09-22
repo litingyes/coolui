@@ -6,7 +6,7 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const badge: UserShortcuts<Theme> = [
   {
-    badge: 'inline-flex items-center gap-2 cursor-pointer text-sm [&+.badge,&+[badge]]:ml-2',
+    badge: 'inline-flex items-center gap-2 cursor-pointer align-middle text-sm [&+.badge,&+[badge]]:ml-2',
   },
   // size
   [
