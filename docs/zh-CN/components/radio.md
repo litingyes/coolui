@@ -138,13 +138,13 @@
 
 ## 拓展
 
-<div btn="~ md soft" checkbox="~">
+<div btn="~ md soft">
   <input radio="~ md" type="radio" id="extend-button" />
   <label for="extend-button">With button</label>
 </div>
 
 ```html
-<div btn="~ md soft" checkbox="~">
+<div btn="~ md soft">
   <input radio="~ md" type="radio" id="extend-button" />
   <label for="extend-button">With button</label>
 </div>
