@@ -73,6 +73,15 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: 'Form',
+                items: [
+                  {
+                    text: 'Input',
+                    link: '/components/input',
+                  },
+                ],
+              },
             ],
           },
         ],
@@ -119,6 +128,15 @@ export default defineConfig({
                   {
                     text: '按钮 Button',
                     link: '/zh-CN/components/button',
+                  },
+                ],
+              },
+              {
+                text: '表单',
+                items: [
+                  {
+                    text: '输入框 Input',
+                    link: '/zh-CN/components/input',
                   },
                 ],
               },
