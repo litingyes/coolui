@@ -154,4 +154,10 @@ export default defineConfig({
       },
     },
   },
+  markdown: {
+    theme: {
+      light: 'catppuccin-latte',
+      dark: 'catppuccin-macchiato',
+    },
+  },
 })
