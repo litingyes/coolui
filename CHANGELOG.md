@@ -1,6 +1,45 @@
 # Changelog
 
 
+## v0.1.0-beta.4
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.3...v0.1.0-beta.4)
+
+### 🚀 Enhancements
+
+- **preset:** Support alpha for theme colors ([232eb4c](https://github.com/litingyes/coolui/commit/232eb4c))
+- **preset:** Adjust dark styles for button ([3416f2c](https://github.com/litingyes/coolui/commit/3416f2c))
+- **preset:** Add autocomplete for button ([5c62f80](https://github.com/litingyes/coolui/commit/5c62f80))
+- **preset:** Add badge ([b531ace](https://github.com/litingyes/coolui/commit/b531ace))
+- **preset:** Support colors key ([79c21ac](https://github.com/litingyes/coolui/commit/79c21ac))
+- **preset:** Add input ([14b93ba](https://github.com/litingyes/coolui/commit/14b93ba))
+- **preset:** Add checkbox ([f2cd192](https://github.com/litingyes/coolui/commit/f2cd192))
+- **preset:** Add radio ([11ba642](https://github.com/litingyes/coolui/commit/11ba642))
+- **preset:** Remove disable & readonly from input ([4f97bbd](https://github.com/litingyes/coolui/commit/4f97bbd))
+- **preset:** Add align-center for button & badge ([bf11624](https://github.com/litingyes/coolui/commit/bf11624))
+
+### 💅 Refactors
+
+- **preset:** Redesign checkbox shortcuts ([97cd926](https://github.com/litingyes/coolui/commit/97cd926))
+
+### 📖 Documentation
+
+- Fix error for icon format ([cfcbf2a](https://github.com/litingyes/coolui/commit/cfcbf2a))
+- Typo ([ef0ddda](https://github.com/litingyes/coolui/commit/ef0ddda))
+- Init guide ([0331c0f](https://github.com/litingyes/coolui/commit/0331c0f))
+- **nav:** Adjust struct ([7ba69cd](https://github.com/litingyes/coolui/commit/7ba69cd))
+- **config:** Remove collapse ([8467f5a](https://github.com/litingyes/coolui/commit/8467f5a))
+- **button:** Adjust extend example ([96f34f5](https://github.com/litingyes/coolui/commit/96f34f5))
+- **theme:** Use catppuccin ([f1570b6](https://github.com/litingyes/coolui/commit/f1570b6))
+
+### 🏡 Chore
+
+- Remove @ts error ([026750d](https://github.com/litingyes/coolui/commit/026750d))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.3
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.2...v0.1.0-beta.3)
