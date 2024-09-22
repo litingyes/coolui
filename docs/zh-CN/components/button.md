@@ -80,16 +80,16 @@
 
 <button btn="~ md solid" class="rounded-full">round</button>
 <button btn="~ md outline" class="border-dashed">dashed</button>
-<button btn="~ md soft" class="border-dashed">
+<button btn="~ md soft">
 <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
-Icon + Text
+Soft with icon
 </button>
 
 ```html
 <button btn="~ md solid" class="rounded-full">round</button>
 <button btn="~ md outline" class="border-dashed">dashed</button>
-<button btn="~ md soft" class="border-dashed">
+<button btn="~ md soft">
   <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
-  Icon + Text
+  Soft with icon
 </button>
 ```
