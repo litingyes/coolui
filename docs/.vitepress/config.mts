@@ -62,7 +62,6 @@ export default defineConfig({
             items: [
               {
                 text: 'Basic',
-                collapsed: true,
                 items: [
                   {
                     text: 'Button',
@@ -108,7 +107,6 @@ export default defineConfig({
             items: [
               {
                 text: '基础',
-                collapsed: true,
                 items: [
                   {
                     text: '按钮 Button',
