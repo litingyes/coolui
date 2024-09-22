@@ -69,7 +69,8 @@ export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) =>
     shortcuts,
     autocomplete: {
       shorthands: {
-        size: '(sm|md|lg)',
+        'size': '(sm|md|lg)',
+        'form-state': '(readonly|disable)',
       },
     },
   }
