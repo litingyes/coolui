@@ -48,19 +48,19 @@ export const button: UserShortcuts<Theme> = [
     ([,c]) => {
       switch (c) {
         case 'solid': {
-          return 'bg-primary text-white hover:bg-primary-700 active:bg-primary-800'
+          return 'bg-primary text-white hover:bg-primary-700 active:bg-primary-800 dark:(hover:bg-primary-600 active:bg-primary-700)'
         }
         case 'outline': {
-          return 'text-primary border border-solid border-primary hover:(text-primary-700 border-primary-700) active:(text-primary-800 border-primary-800)'
+          return 'text-primary border border-solid border-primary hover:(text-primary-700 border-primary-700) active:(text-primary-800 border-primary-800) dark:hover:(text-primary-400 border-primary-400) dark:active:(text-primary-300 border-primary-300)'
         }
         case 'soft': {
-          return 'text-primary-500 bg-primary-50 hover:bg-primary-100'
+          return 'text-primary-500 bg-primary-50 hover:bg-primary-100 active:bg-primary-200 dark:bg-primary-950 dark:hover:bg-primary-900 dark:active:bg-primary-800'
         }
         case 'ghost': {
-          return 'text-primary-500 hover:bg-cool-100 active:bg-cool-200'
+          return 'text-primary-500 hover:bg-cool-100 active:bg-cool-200 dark:(hover:bg-cool-950 active:bg-cool-900)'
         }
         case 'link': {
-          return 'text-primary-500 decoration-solid underline-offset-2 hover:(text-primary-600 underline decoration-primary-600)'
+          return 'text-primary-500 no-underline decoration-solid underline-offset-2 hover:(text-primary-600 underline decoration-primary-600) dark:hover:(text-primary-400 decoration-primary-400)'
         }
       }
     },
