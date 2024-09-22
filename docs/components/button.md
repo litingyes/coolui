@@ -60,6 +60,22 @@
 <a btn="~ md !link disabled">link</a>
 ```
 
+## Colors
+
+<button btn="~ md solid-red">solid</button>
+<button btn="~ md outline-yellow">outline</button>
+<button btn="~ md soft-green">soft</button>
+<button btn="~ md ghost-violet">ghost</button>
+<a btn="~ md !link-fuchsia">link</a>
+
+```html
+<button btn="~ md solid-red">solid</button>
+<button btn="~ md outline-yellow">outline</button>
+<button btn="~ md soft-green">soft</button>
+<button btn="~ md ghost-violet">ghost</button>
+<a btn="~ md !link-fuchsia">link</a>
+```
+
 ## Extend
 
 <button btn="~ md solid" class="rounded-full">round</button>

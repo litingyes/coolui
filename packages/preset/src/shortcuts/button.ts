@@ -2,6 +2,7 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const button: UserShortcuts<Theme> = [
   {
@@ -50,28 +51,33 @@ export const button: UserShortcuts<Theme> = [
   ],
   // variant
   [
-    /^btn-(solid|outline|ghost|soft|link)$/,
-    ([,c]) => {
+    /^btn-(solid|outline|ghost|soft|link)(-.*)?$/,
+    ([,c, d], { theme }) => {
+      const key = resolveThemeKey(theme, d?.slice(1))
+
       switch (c) {
         case 'solid': {
-          return 'bg-primary text-white hover:bg-primary-700 active:bg-primary-800 dark:(hover:bg-primary-600 active:bg-primary-700)'
+          return withThemeKey('bg-primary text-white hover:bg-primary-700 active:bg-primary-800 dark:(hover:bg-primary-600 active:bg-primary-700)', key)
         }
         case 'outline': {
-          return 'text-primary border border-solid border-primary hover:(text-primary-700 border-primary-700) active:(text-primary-800 border-primary-800) dark:hover:(text-primary-400 border-primary-400) dark:active:(text-primary-300 border-primary-300)'
+          return withThemeKey('text-primary border border-solid border-primary hover:(text-primary-700 border-primary-700) active:(text-primary-800 border-primary-800) dark:hover:(text-primary-400 border-primary-400) dark:active:(text-primary-300 border-primary-300)', key)
         }
         case 'soft': {
-          return 'text-primary-500 bg-primary-50 hover:bg-primary-100 active:bg-primary-200 dark:bg-primary-950 dark:hover:bg-primary-900 dark:active:bg-primary-800'
+          return withThemeKey('text-primary-500 bg-primary-50 hover:bg-primary-100 active:bg-primary-200 dark:bg-primary-950 dark:hover:bg-primary-900 dark:active:bg-primary-800', key)
         }
         case 'ghost': {
-          return 'text-primary-500 hover:bg-cool-100 active:bg-cool-200 dark:(hover:bg-cool-950 active:bg-cool-900)'
+          return withThemeKey('text-primary-500 hover:bg-cool-100 active:bg-cool-200 dark:(hover:bg-cool-950 active:bg-cool-900)', key)
         }
         case 'link': {
-          return 'text-primary-500 no-underline decoration-solid underline-offset-2 hover:(text-primary-600 underline decoration-primary-600) dark:hover:(text-primary-400 decoration-primary-400)'
+          return withThemeKey('text-primary-500 no-underline decoration-solid underline-offset-2 hover:(text-primary-600 underline decoration-primary-600) dark:hover:(text-primary-400 decoration-primary-400)', key)
         }
       }
     },
     {
-      autocomplete: 'btn-(solid|outline|ghost|soft|link)',
+      autocomplete: [
+        'btn-(solid|outline|ghost|soft|link)',
+        'btn-(solid|outline|ghost|soft|link)-$colors',
+      ],
     },
   ],
 ]

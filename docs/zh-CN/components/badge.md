@@ -48,6 +48,18 @@
 </div>
 ```
 
+## 颜色
+
+<div badge="~ md solid-red">solid</div>
+<div badge="~ md outline-yellow">outline</div>
+<div badge="~ md soft-green">soft</div>
+
+```html
+<div badge="~ md solid-red">solid</div>
+<div badge="~ md outline-yellow">outline</div>
+<div badge="~ md soft-green">soft</div>
+```
+
 ## 拓展
 
 <div badge="~ md solid" class="rounded-full">round</div>

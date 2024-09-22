@@ -2,6 +2,7 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const badge: UserShortcuts<Theme> = [
   {
@@ -49,22 +50,27 @@ export const badge: UserShortcuts<Theme> = [
   ],
   // variant
   [
-    /^badge-(solid|outline|soft)$/,
-    ([,c]) => {
+    /^badge-(solid|outline|soft)(-.*)?$/,
+    ([,c, d], { theme }) => {
+      const key = resolveThemeKey(theme, d?.slice(1))
+
       switch (c) {
         case 'solid': {
-          return 'bg-primary text-white'
+          return withThemeKey('bg-primary text-white', key)
         }
         case 'outline': {
-          return 'text-primary border border-solid border-primary'
+          return withThemeKey('text-primary border border-solid border-primary', key)
         }
         case 'soft': {
-          return 'text-primary-500 bg-primary-50 dark:bg-primary-950'
+          return withThemeKey('text-primary-500 bg-primary-50 dark:bg-primary-950', key)
         }
       }
     },
     {
-      autocomplete: 'badge-(solid|outline|soft)',
+      autocomplete: [
+        'badge-(solid|outline|soft)',
+        'badge-(solid|outline|soft)-$colors',
+      ],
     },
   ],
 ]

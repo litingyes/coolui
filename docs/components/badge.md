@@ -48,6 +48,18 @@
 </div>
 ```
 
+## Colors
+
+<div badge="~ md solid-red">solid</div>
+<div badge="~ md outline-yellow">outline</div>
+<div badge="~ md soft-green">soft</div>
+
+```html
+<div badge="~ md solid-red">solid</div>
+<div badge="~ md outline-yellow">outline</div>
+<div badge="~ md soft-green">soft</div>
+```
+
 ## Extend
 
 <div badge="~ md solid" class="rounded-full">round</div>
