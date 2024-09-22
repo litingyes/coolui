@@ -14,6 +14,7 @@
 
 ## 样式
 
+<button btn="~ md">default</button>
 <button btn="~ md solid">solid</button>
 <button btn="~ md outline">outline</button>
 <button btn="~ md soft">soft</button>
@@ -21,6 +22,7 @@
 <a btn="~ md !link">link</a>
 
 ```html
+<button btn="~ md">default</button>
 <button btn="~ md solid">solid</button>
 <button btn="~ md outline">outline</button>
 <button btn="~ md soft">soft</button>
@@ -30,14 +32,26 @@
 
 ## 图标
 
-<button btn="~ icon-sm outline">
-<i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
+<button btn="~ icon-sm">
+  <i class="i-carbon:color-palette w-1em h-1em" />
+</button>
+<button btn="~ icon-sm solid">
+  <i class="i-ph:open-ai-logo w-1em h-1em" />
+</button>
+<button btn="~ icon-md outline">
+  <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
 </button>
 <button btn="~ icon-md soft"><i class="i-fxemoji:artistpalette w-1em h-1em" /></button>
 <button btn="~ icon-lg ghost"><i class="i-logos:figma w-1em h-1em" /></button>
 
 ```html
-<button btn="~ icon-sm outline">
+<button btn="~ icon-sm">
+  <i class="i-carbon:color-palette w-1em h-1em" />
+</button>
+<button btn="~ icon-sm solid">
+  <i class="i-ph:open-ai-logo w-1em h-1em" />
+</button>
+<button btn="~ icon-md outline">
   <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
 </button>
 <button btn="~ icon-md soft"><i class="i-fxemoji:artistpalette w-1em h-1em" /></button>
