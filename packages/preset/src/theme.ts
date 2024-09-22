@@ -5,7 +5,11 @@ import { theme } from 'magic-color'
 function formatTheme(name: string, color: string) {
   return theme(color, {
     type: 'rgb',
-    render: ([key, value]) => [String(key), `var(--cool-theme-${name}-${key}, ${value})`],
+    render: ([key, value]) =>
+      [
+        String(key),
+        `var(--cool-theme-${name}-${key}, ${value.replace(')', ' / %alpha)')})`,
+      ],
   })
 }
 
