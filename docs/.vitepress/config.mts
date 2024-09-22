@@ -61,8 +61,14 @@ export default defineConfig({
             text: 'Components',
             items: [
               {
-                text: 'Button',
-                link: '/components/button',
+                text: 'Basic',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'Button',
+                    link: '/components/button',
+                  },
+                ],
               },
             ],
           },
@@ -101,8 +107,14 @@ export default defineConfig({
             text: '组件',
             items: [
               {
-                text: '按钮 Button',
-                link: '/zh-CN/components/button',
+                text: '基础',
+                collapsed: true,
+                items: [
+                  {
+                    text: '按钮 Button',
+                    link: '/zh-CN/components/button',
+                  },
+                ],
               },
             ],
           },
