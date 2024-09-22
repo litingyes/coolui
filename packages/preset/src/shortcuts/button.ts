@@ -24,8 +24,11 @@ export const button: UserShortcuts<Theme> = [
         }
       }
     },
+    {
+      autocomplete: 'btn-<size>',
+    },
   ],
-  // size
+  // icon size
   [
     /^btn-icon-(sm|md|lg)$/,
     ([,c]) => {
@@ -40,6 +43,9 @@ export const button: UserShortcuts<Theme> = [
           return 'size-8 justify-center p-1.5 text-xl rounded-2'
         }
       }
+    },
+    {
+      autocomplete: 'btn-icon-<size>',
     },
   ],
   // variant
@@ -63,6 +69,9 @@ export const button: UserShortcuts<Theme> = [
           return 'text-primary-500 no-underline decoration-solid underline-offset-2 hover:(text-primary-600 underline decoration-primary-600) dark:hover:(text-primary-400 decoration-primary-400)'
         }
       }
+    },
+    {
+      autocomplete: 'btn-(solid|outline|ghost|soft|link)',
     },
   ],
 ]
