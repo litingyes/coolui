@@ -64,6 +64,10 @@ export default defineConfig({
                 text: 'Basic',
                 items: [
                   {
+                    text: 'Badge',
+                    link: '/components/badge',
+                  },
+                  {
                     text: 'Button',
                     link: '/components/button',
                   },
@@ -108,6 +112,10 @@ export default defineConfig({
               {
                 text: '基础',
                 items: [
+                  {
+                    text: '徽章 Badge',
+                    link: '/zh-CN/components/badge',
+                  },
                   {
                     text: '按钮 Button',
                     link: '/zh-CN/components/button',
