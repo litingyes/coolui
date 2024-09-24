@@ -12,7 +12,11 @@
     "macchiato",
     "mingcute",
     "Nuxt",
-    "unocss"
+    "shiki",
+    "shikijs",
+    "unocss",
+    "vueuse",
+    "whyframe"
   ],
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
@@ -63,5 +67,8 @@
   ],
   "unocss.languageIds": [
     "typescript"
+  ],
+  "eslint.workingDirectories": [
+    "../docs"
   ]
 }

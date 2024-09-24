@@ -1,0 +1,30 @@
+<script lang="ts" setup>
+import { onMounted, ref } from 'vue'
+// @ts-expect-error whyframe
+import { createApp } from 'whyframe:app'
+
+defineOptions({
+  name: 'FramesDefault',
+})
+
+const containerRef = ref<HTMLDivElement>()
+
+onMounted(() => {
+  createApp(containerRef.value)
+  document.body.setAttribute('data-frame', 'default')
+})
+</script>
+
+<template>
+  <div class="h-full flex items-center justify-center p-4">
+    <div ref="containerRef" />
+  </div>
+</template>
+
+<style lang="scss">
+[data-frame] {
+  #app {
+    height: 100vh;
+  }
+}
+</style>
