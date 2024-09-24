@@ -50,7 +50,10 @@ function onLoad() {
 </script>
 
 <template>
-  <div class="my-4 h-full overflow-hidden border border-cool-100 rounded-2 border-solid p-1 dark:border-cool-900">
+  <div class="relative my-4 h-full overflow-hidden border border-cool-100 rounded-2 border-solid p-1 dark:border-cool-900">
+    <div v-if="!isLoaded" class="absolute inset-0 z-99 flex items-center justify-center bg-cool-50/5 font-600 backdrop-blur">
+      <span class="from-pink-500 to-violet-500 bg-gradient-to-r bg-clip-text text-xl text-transparent"> Cool UI</span>
+    </div>
     <div class="grid grid-rows-[0fr] transition-all duration-300" :class="{ 'grid-rows-[1fr]': isLoaded }">
       <div class="overflow-hidden">
         <iframe ref="iframeRef" class="w-full border-none" :title="title" :src="src" data-why @load="onLoad">
