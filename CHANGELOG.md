@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.1.0-beta.6
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.5...v0.1.0-beta.6)
+
+### 📖 Documentation
+
+- **nav:** Add changelog link ([4ba6502](https://github.com/litingyes/coolui/commit/4ba6502))
+- Add readme ([234d7b1](https://github.com/litingyes/coolui/commit/234d7b1))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.5
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.4...v0.1.0-beta.5)
