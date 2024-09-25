@@ -39,7 +39,7 @@ export const input: UserShortcuts<Theme> = [
           return withThemeKey('border border-solid border-cool-200 focus-within:(border-primary ring ring-1 ring-primary) dark:border-cool-800', key)
         }
         case 'soft': {
-          return withThemeKey('text-primary-500 bg-primary-50 focus-within:bg-primary-100 dark:(bg-primary-950 focus-within:bg-primary-900)', key)
+          return withThemeKey('text-primary-500 bg-primary-50 placeholder:text-primary-500 focus-within:bg-primary-100 dark:(bg-primary-950 focus-within:bg-primary-900)', key)
         }
       }
     },

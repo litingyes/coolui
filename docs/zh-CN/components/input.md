@@ -15,6 +15,13 @@
 <input input="~ md soft" value="soft" />
 ```
 
+## Placeholder
+
+```html
+<input input="~ sm outline" placeholder="input" />
+<input input="~ md soft" placeholder="input" />
+```
+
 ## 只读
 
 ```html
