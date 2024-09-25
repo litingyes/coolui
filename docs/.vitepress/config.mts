@@ -42,6 +42,11 @@ export default defineConfig({
             text: 'Components',
             link: '/components/button',
           },
+          {
+            text: 'CHANGELOG',
+            link: 'https://github.com/litingyes/coolui/blob/main/CHANGELOG.md',
+            target: '_blank',
+          },
         ],
         sidebar: [
           {
@@ -107,6 +112,11 @@ export default defineConfig({
           {
             text: '组件',
             link: '/zh-CN/components/button',
+          },
+          {
+            text: '更新日志',
+            link: 'https://github.com/litingyes/coolui/blob/main/CHANGELOG.md',
+            target: '_blank',
           },
         ],
         sidebar: [
