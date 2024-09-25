@@ -32,6 +32,52 @@ export default defineConfig({
 })
 ```
 
+### Options
+
+```ts
+export interface PresetCoolOptions {
+  // Theme style group that Cool UI depends on
+  theme: {
+    // default: blue
+    primary: string
+
+    // default: gray
+    cool: string
+
+    // default: #8c8c8c
+    info: string
+
+    // default: green
+    success: string
+
+    // default: yellow
+    warning: string
+
+    // default: red
+    error: string
+  }
+
+  // Corresponding preset options
+
+  // default: { dark: 'class' }
+  uno?: PresetUnoOptions
+
+  /*
+   * default:
+   * {
+   *  extraProperties: {
+   *   'display': 'inline-block',
+   *   'vertical-align': 'middle',
+   *  }
+   * }
+  */
+  icons?: IconsOptions
+
+  // default: {}
+  attributify?: AttributifyOptions
+}
+```
+
 ## Integrations
 
 <div class="grid grid-cols-2 gap-6">

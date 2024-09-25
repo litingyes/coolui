@@ -1,4 +1,7 @@
-import type { PresetMiniOptions, Theme } from 'unocss/preset-mini'
+import type { AttributifyOptions } from 'unocss/preset-attributify'
+import type { IconsOptions } from 'unocss/preset-icons'
+import type { Theme } from 'unocss/preset-mini'
+import type { PresetUnoOptions } from 'unocss/preset-uno'
 import { definePreset, mergeDeep, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { shortcuts } from './shortcuts'
 import { createTheme } from './theme'
@@ -12,8 +15,9 @@ export interface PresetCoolOptions {
     warning: string
     error: string
   }
-  dark: PresetMiniOptions['dark']
-  prefix: PresetMiniOptions['variablePrefix']
+  uno?: PresetUnoOptions
+  icons?: IconsOptions
+  attributify?: AttributifyOptions
 }
 
 const defaultOptions: PresetCoolOptions = {
@@ -24,10 +28,17 @@ const defaultOptions: PresetCoolOptions = {
     success: 'green',
     warning: 'yellow',
     error: 'red',
-
   },
-  dark: 'class',
-  prefix: 'cool-',
+  uno: {
+    dark: 'class',
+  },
+  icons: {
+    extraProperties: {
+      'display': 'inline-block',
+      'vertical-align': 'middle',
+    },
+  },
+  attributify: {},
 }
 
 export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) => {
@@ -36,19 +47,9 @@ export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) =>
   return {
     name: 'cool',
     presets: [
-      presetUno({
-        dark: resolvedOptions.dark,
-        variablePrefix: resolvedOptions.prefix,
-      }),
-      presetIcons({
-        extraProperties: {
-          'display': 'inline-block',
-          'vertical-align': 'middle',
-        },
-      }),
-      presetAttributify({
-        prefix: options.prefix,
-      }),
+      presetUno(resolvedOptions.uno),
+      presetIcons(resolvedOptions.icons),
+      presetAttributify(resolvedOptions.attributify),
     ],
     transformers: [
       transformerVariantGroup(),
