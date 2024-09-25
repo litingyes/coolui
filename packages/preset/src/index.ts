@@ -31,7 +31,7 @@ const defaultOptions: PresetCoolOptions = {
 }
 
 export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) => {
-  const resolvedOptions = mergeDeep(options, defaultOptions)
+  const resolvedOptions = mergeDeep(defaultOptions, options)
 
   return {
     name: 'cool',
