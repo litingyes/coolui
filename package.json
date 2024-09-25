@@ -1,7 +1,7 @@
 {
   "name": "@coolui/monorepo",
   "type": "module",
-  "version": "0.1.0-beta.4",
+  "version": "0.1.0-beta.5",
   "private": true,
   "description": "Opinionated and lightweight ui library",
   "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",

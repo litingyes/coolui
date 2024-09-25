@@ -1,6 +1,50 @@
 # Changelog
 
 
+## v0.1.0-beta.5
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.4...v0.1.0-beta.5)
+
+### 🚀 Enhancements
+
+- **preset:** Add default variant for button ([acf8745](https://github.com/litingyes/coolui/commit/acf8745))
+- **preset:** Add placeholder style for input ([7b3fb9b](https://github.com/litingyes/coolui/commit/7b3fb9b))
+
+### 💅 Refactors
+
+- **preset:** ⚠️  Adjust struct for options ([88966f9](https://github.com/litingyes/coolui/commit/88966f9))
+
+### 📖 Documentation
+
+- **radio:** Fix demo error for extend ([0c29e7e](https://github.com/litingyes/coolui/commit/0c29e7e))
+- **theme:** Add view transition ([c5348fa](https://github.com/litingyes/coolui/commit/c5348fa))
+- Add code-preview ([5c86551](https://github.com/litingyes/coolui/commit/5c86551))
+- **code preview:** Add placeholder when loading iframe content ([e8a1a89](https://github.com/litingyes/coolui/commit/e8a1a89))
+- **getting start:** Add content ([564aee7](https://github.com/litingyes/coolui/commit/564aee7))
+- **introduction:** Add content ([27d3ad7](https://github.com/litingyes/coolui/commit/27d3ad7))
+
+### 📦 Build
+
+- **lock:** Update lock file ([55a829c](https://github.com/litingyes/coolui/commit/55a829c))
+
+### 🏡 Chore
+
+- **preset:** Move @iconify/json into dependencies ([247449c](https://github.com/litingyes/coolui/commit/247449c))
+- **preset:** Remove defu ([305c6a5](https://github.com/litingyes/coolui/commit/305c6a5))
+- **preset:** Remove defu ([b4f4d7b](https://github.com/litingyes/coolui/commit/b4f4d7b))
+
+### ✅ Tests
+
+- **examples:** Init vue and react ([8d42af6](https://github.com/litingyes/coolui/commit/8d42af6))
+
+#### ⚠️ Breaking Changes
+
+- **preset:** ⚠️  Adjust struct for options ([88966f9](https://github.com/litingyes/coolui/commit/88966f9))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.4
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.3...v0.1.0-beta.4)
