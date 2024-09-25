@@ -3,7 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import CodePreview from './components/CodePreview.vue'
 import Layout from './Layout.vue'
-import './style.css'
+import './style.scss'
 import 'uno.css'
 
 export default {
