@@ -33,10 +33,10 @@
     "build": "unbuild"
   },
   "peerDependencies": {
-    "@iconify/json": "catalog:",
     "unocss": "catalog:"
   },
   "dependencies": {
+    "@iconify/json": "^2.2.252",
     "defu": "^6.1.4",
     "magic-color": "^1.2.2"
   }

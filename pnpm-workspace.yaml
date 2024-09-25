@@ -5,4 +5,3 @@ packages:
 catalog:
   unocss: ^0.62
   vue: ^3.5
-  '@iconify/json': ^2.2
