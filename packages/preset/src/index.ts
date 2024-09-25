@@ -1,6 +1,5 @@
 import type { PresetMiniOptions, Theme } from 'unocss/preset-mini'
-import { defu } from 'defu'
-import { definePreset, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { definePreset, mergeDeep, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 import { shortcuts } from './shortcuts'
 import { createTheme } from './theme'
 
@@ -32,7 +31,7 @@ const defaultOptions: PresetCoolOptions = {
 }
 
 export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) => {
-  const resolvedOptions = defu<PresetCoolOptions, [PresetCoolOptions]>(options, defaultOptions)
+  const resolvedOptions = mergeDeep(options, defaultOptions)
 
   return {
     name: 'cool',
