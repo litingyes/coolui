@@ -6,6 +6,7 @@
     "catppuccin",
     "changelogen",
     "coolui",
+    "cssui",
     "defu",
     "fxemoji",
     "iconify",
@@ -67,8 +68,5 @@
   ],
   "unocss.languageIds": [
     "typescript"
-  ],
-  "eslint.workingDirectories": [
-    "../docs"
   ]
 }
