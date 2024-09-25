@@ -76,7 +76,7 @@
 </fieldset>
 ```
 
-## 拓展
+## 组合
 
 ```html
 <div btn="~ md soft">

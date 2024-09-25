@@ -76,7 +76,7 @@
 </fieldset>
 ```
 
-## Extend
+## Compose
 
 ```html
 <div btn="~ md soft">

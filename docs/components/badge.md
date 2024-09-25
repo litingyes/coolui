@@ -38,7 +38,7 @@
 <div badge="~ md soft-green">soft</div>
 ```
 
-## Extend
+## Compose
 
 ```html
 <div badge="~ md solid" class="rounded-full">round</div>

@@ -95,7 +95,7 @@
 </fieldset>
 ```
 
-## Extend
+## Compose
 
 ```html
 <button btn="~ md soft">

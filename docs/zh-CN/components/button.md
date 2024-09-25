@@ -55,7 +55,7 @@
 <a btn="~ md !link-fuchsia">link</a>
 ```
 
-## 拓展
+## 组合
 
 ```html
 <button btn="~ md solid" class="rounded-full">round</button>

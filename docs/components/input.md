@@ -47,7 +47,7 @@
 <input input="~ md soft-yellow" value="soft" />
 ```
 
-## Extend
+## Compose
 
 ```html
 <div input="~ md outline">

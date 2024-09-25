@@ -47,7 +47,7 @@
 <input input="~ md soft-yellow" value="soft" />
 ```
 
-## 拓展
+## 组合
 
 ```html
 <div input="~ md outline">

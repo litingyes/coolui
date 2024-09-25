@@ -95,7 +95,7 @@
 </fieldset>
 ```
 
-## 拓展
+## 组合
 
 ```html
 <button btn="~ md soft">

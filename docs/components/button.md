@@ -55,7 +55,7 @@
 <a btn="~ md !link-fuchsia">link</a>
 ```
 
-## Extend
+## Compose
 
 ```html
 <button btn="~ md solid" class="rounded-full">round</button>
