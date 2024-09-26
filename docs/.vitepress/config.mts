@@ -39,8 +39,21 @@ export default defineConfig({
             link: '/guide/introduction',
           },
           {
-            text: 'Components',
-            link: '/components/button',
+            text: 'Atomization',
+            items: [
+              {
+                text: 'Display',
+                link: '/atomization/display/badge',
+              },
+              {
+                text: 'Interaction',
+                link: '/atomization/interaction/button',
+              },
+              {
+                text: 'Form',
+                link: '/atomization/form/input',
+              },
+            ],
           },
           {
             text: 'CHANGELOG',
@@ -63,18 +76,23 @@ export default defineConfig({
             ],
           },
           {
-            text: 'Components',
+            text: 'Atomization',
             items: [
               {
-                text: 'Basic',
+                text: 'Display',
                 items: [
                   {
                     text: 'Badge',
-                    link: '/components/badge',
+                    link: '/atomization/display/badge',
                   },
+                ],
+              },
+              {
+                text: 'Interaction',
+                items: [
                   {
                     text: 'Button',
-                    link: '/components/button',
+                    link: '/atomization/interaction/button',
                   },
                 ],
               },
@@ -83,15 +101,15 @@ export default defineConfig({
                 items: [
                   {
                     text: 'Input',
-                    link: '/components/input',
+                    link: '/atomization/form/input',
                   },
                   {
                     text: 'Checkbox',
-                    link: '/components/checkbox',
+                    link: '/atomization/form/checkbox',
                   },
                   {
                     text: 'Radio',
-                    link: '/components/radio',
+                    link: '/atomization/form/radio',
                   },
                 ],
               },
@@ -110,8 +128,21 @@ export default defineConfig({
             link: '/zh-CN/guide/introduction',
           },
           {
-            text: '组件',
-            link: '/zh-CN/components/button',
+            text: '原子化',
+            items: [
+              {
+                text: '显示',
+                link: '/zh-CN/atomization/display/badge',
+              },
+              {
+                text: '交互',
+                link: '/zh-CN/atomization/interaction/button',
+              },
+              {
+                text: '表单',
+                link: '/zh-CN/atomization/form/input',
+              },
+            ],
           },
           {
             text: '更新日志',
@@ -134,18 +165,23 @@ export default defineConfig({
             ],
           },
           {
-            text: '组件',
+            text: '原子化',
             items: [
               {
-                text: '基础',
+                text: '显示',
                 items: [
                   {
                     text: '徽章 Badge',
-                    link: '/zh-CN/components/badge',
+                    link: '/zh-CN/atomization/display/badge',
                   },
+                ],
+              },
+              {
+                text: '交互',
+                items: [
                   {
-                    text: '按钮 Button',
-                    link: '/zh-CN/components/button',
+                    text: 'Button',
+                    link: '/zh-CN/atomization/interaction/button',
                   },
                 ],
               },
@@ -154,15 +190,15 @@ export default defineConfig({
                 items: [
                   {
                     text: '输入框 Input',
-                    link: '/zh-CN/components/input',
+                    link: '/zh-CN/atomization/form/input',
                   },
                   {
                     text: '复选框 Checkbox',
-                    link: '/zh-CN/components/checkbox',
+                    link: '/zh-CN/atomization/form/checkbox',
                   },
                   {
                     text: '单选框 Radio',
-                    link: '/zh-CN/components/radio',
+                    link: '/zh-CN/atomization/form/radio',
                   },
                 ],
               },
