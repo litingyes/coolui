@@ -4,6 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    unocss:
+      specifier: ^0.62
+      version: 0.62.4
+    vue:
+      specifier: ^3.5
+      version: 3.5.7
+
 importers:
 
   .:
@@ -181,6 +190,9 @@ importers:
       '@iconify/json':
         specifier: ^2.2.252
         version: 2.2.252
+      '@unocss/reset':
+        specifier: ^0.62.4
+        version: 0.62.4
       magic-color:
         specifier: ^1.2.2
         version: 1.2.2

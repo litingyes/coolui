@@ -73,5 +73,15 @@ export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) =>
         'form-state': '(readonly|disable)',
       },
     },
+    preflights: [
+      {
+        // @ts-expect-error no declaration
+        getCSS: async () => (await import('@unocss/reset/tailwind.css')).default,
+      },
+      {
+        // @ts-expect-error no declaration
+        getCSS: () => import('@unocss/reset/tailwind-compat.css').default,
+      },
+    ],
   }
 })
