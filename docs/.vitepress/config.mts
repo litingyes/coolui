@@ -100,16 +100,20 @@ export default defineConfig({
                 text: 'Form',
                 items: [
                   {
-                    text: 'Input',
-                    link: '/atomization/form/input',
-                  },
-                  {
                     text: 'Checkbox',
                     link: '/atomization/form/checkbox',
                   },
                   {
+                    text: 'Input',
+                    link: '/atomization/form/input',
+                  },
+                  {
                     text: 'Radio',
                     link: '/atomization/form/radio',
+                  },
+                  {
+                    text: 'Toggle',
+                    link: '/atomization/form/toggle',
                   },
                 ],
               },
@@ -180,7 +184,7 @@ export default defineConfig({
                 text: '交互',
                 items: [
                   {
-                    text: 'Button',
+                    text: '按钮 Button',
                     link: '/zh-CN/atomization/interaction/button',
                   },
                 ],
@@ -189,16 +193,20 @@ export default defineConfig({
                 text: '表单',
                 items: [
                   {
-                    text: '输入框 Input',
-                    link: '/zh-CN/atomization/form/input',
-                  },
-                  {
                     text: '复选框 Checkbox',
                     link: '/zh-CN/atomization/form/checkbox',
                   },
                   {
+                    text: '输入框 Input',
+                    link: '/zh-CN/atomization/form/input',
+                  },
+                  {
                     text: '单选框 Radio',
                     link: '/zh-CN/atomization/form/radio',
+                  },
+                  {
+                    text: '开关 Toggle',
+                    link: '/zh-CN/atomization/form/toggle',
                   },
                 ],
               },

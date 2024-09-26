@@ -6,16 +6,20 @@ import { button } from './button'
 import { checkbox } from './checkbox'
 import { input } from './input'
 import { radio } from './radio'
+import { toggle } from './toggle'
 
 export const shortcuts: UserShortcuts<Theme> = [
   ...toArray(base),
 
-  // basic
-  ...toArray(button),
+  // display
   ...toArray(badge),
 
+  // interaction
+  ...toArray(button),
+
   // form
-  ...toArray(input),
   ...toArray(checkbox),
+  ...toArray(input),
   ...toArray(radio),
+  ...toArray(toggle),
 ]
