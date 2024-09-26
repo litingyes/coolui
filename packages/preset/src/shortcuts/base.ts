@@ -12,7 +12,7 @@ export const base: UserShortcuts<Theme> = [
           return '!pointer-events-none'
         }
         case 'disabled' : {
-          return 'form-readonly !grayscale-50'
+          return 'form-readonly !grayscale'
         }
       }
     },
