@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.1.0-beta.7
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.6...v0.1.0-beta.7)
+
+### 🚀 Enhancements
+
+- **preset:** Add tailwind preflights ([bd30ff1](https://github.com/litingyes/coolui/commit/bd30ff1))
+- **preset:** Adjust grayscale for 'form-disabled' ([32f7b16](https://github.com/litingyes/coolui/commit/32f7b16))
+- **preset:** Add toggle ([84b18a9](https://github.com/litingyes/coolui/commit/84b18a9))
+- **preset:** Adjust size consistency ([92ee570](https://github.com/litingyes/coolui/commit/92ee570))
+- **preset:** Add custom layers ([08f5486](https://github.com/litingyes/coolui/commit/08f5486))
+
+### 📖 Documentation
+
+- Rename extend to compose ([b01e6e1](https://github.com/litingyes/coolui/commit/b01e6e1))
+- **theme:** Fix dark bg for code preview ([386e011](https://github.com/litingyes/coolui/commit/386e011))
+- Adjust docs struct ([e1408a7](https://github.com/litingyes/coolui/commit/e1408a7))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.6
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.5...v0.1.0-beta.6)
