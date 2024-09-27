@@ -6,7 +6,7 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const radio: UserShortcuts<Theme> = [
   {
-    radio: 'appearance-none m-0 mr-1 relative size-5 before:(content-[""] absolute left-0 top-1/2 -translate-y-1/2 size-5 rounded-full outline outline-1 outline-offset-2 outline-primary transition duration-300) checked:before:(outline-primary-700 bg-primary-700 outline-2)',
+    radio: 'appearance-none inline-block m-0 relative size-3 before:(content-[""] absolute left-0 top-1/2 -translate-y-1/2 size-3 rounded-full outline outline-1 outline-offset-2 outline-primary transition duration-300) checked:before:(outline-primary-700 bg-primary-700 outline-2)',
   },
   // size & variant
   [
@@ -20,7 +20,7 @@ export const radio: UserShortcuts<Theme> = [
           return 'size-3 before:size-3'
         }
         case 'lg': {
-          return 'size-3.5 before:size-3.5'
+          return 'size-4 before:size-4'
         }
       }
 

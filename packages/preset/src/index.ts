@@ -3,6 +3,7 @@ import type { IconsOptions } from 'unocss/preset-icons'
 import type { Theme } from 'unocss/preset-mini'
 import type { PresetUnoOptions } from 'unocss/preset-uno'
 import { definePreset, mergeDeep, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { createPreflights } from './preflights'
 import { shortcuts } from './shortcuts'
 import { createTheme } from './theme'
 
@@ -73,15 +74,6 @@ export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) =>
         'form-state': '(readonly|disable)',
       },
     },
-    preflights: [
-      {
-        // @ts-expect-error no declaration
-        getCSS: async () => (await import('@unocss/reset/tailwind.css')).default,
-      },
-      {
-        // @ts-expect-error no declaration
-        getCSS: () => import('@unocss/reset/tailwind-compat.css').default,
-      },
-    ],
+    preflights: createPreflights(),
   }
 })

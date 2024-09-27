@@ -6,7 +6,7 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const button: UserShortcuts<Theme> = [
   {
-    'btn': 'inline-flex items-center gap-2 cursor-pointer text-sm align-middle transition duration-300 border border-solid border-cool-500 active:(scale-106 border-primary-800) [&+.btn,&+[btn]]:ml-2',
+    'btn': 'inline-flex items-center gap-2 cursor-pointer text-sm align-middle transition duration-300 border border-solid border-cool-500 px-3 py-0.5 rounded-1.5 text-base active:(scale-106 border-primary-800) [&+.btn,&+[btn]]:ml-2',
     'btn-disabled': '!pointer-events-none !grayscale-50',
   },
   // size
@@ -15,13 +15,13 @@ export const button: UserShortcuts<Theme> = [
     ([,c]) => {
       switch (c) {
         case 'sm': {
-          return 'px-2 py-0.5 rounded'
+          return 'px-2 py-0 rounded text-sm'
         }
         case 'md' : {
-          return 'px-3 py-1 rounded-1.5'
+          return 'px-3 py-0.5 rounded-1.5 text-base'
         }
         case 'lg': {
-          return 'px-4 py-1.5 rounded-2'
+          return 'px-4 py-0.5 rounded-2 text-xl'
         }
       }
     },

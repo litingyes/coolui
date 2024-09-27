@@ -6,7 +6,7 @@ import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const input: UserShortcuts<Theme> = [
   {
-    input: 'inline-flex items-center gap-2 align-middle cursor-text [&+.input,&+[input]]:ml-2',
+    input: 'inline-flex items-center gap-2 align-middle cursor-text px-3 py-0.5 rounded-1.5 text-base [&+.input,&+[input]]:ml-2',
   },
   // size
   [
@@ -14,13 +14,13 @@ export const input: UserShortcuts<Theme> = [
     ([,c]) => {
       switch (c) {
         case 'sm': {
-          return 'px-2 py-0.5 rounded'
+          return 'px-2 py-0.5 rounded text-sm'
         }
         case 'md' : {
-          return 'px-3 py-1 rounded-1.5'
+          return 'px-3 py-0.5 rounded-1.5 text-base'
         }
         case 'lg': {
-          return 'px-4 py-1.5 rounded-2'
+          return 'px-4 py-0.5 rounded-2 text-xl'
         }
       }
     },

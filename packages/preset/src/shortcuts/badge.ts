@@ -5,22 +5,23 @@ import type { Theme } from 'unocss/preset-mini'
 import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const badge: UserShortcuts<Theme> = [
+
   {
-    badge: 'inline-flex items-center gap-2 cursor-pointer align-middle text-sm [&+.badge,&+[badge]]:ml-2',
+    'badge': 'inline-flex items-center gap-2 cursor-pointer align-middle text-base px-3 py-0.5 rounded-2 text-base [&+.badge,&+[badge]]:ml-2',
+    'badge-icon': 'size-7 justify-center p-1.5 text-base rounded-2',
   },
-  // size
   [
     /^badge-(sm|md|lg)$/,
     ([,c]) => {
       switch (c) {
         case 'sm': {
-          return 'px-2 py-0 rounded-1.5'
+          return 'px-2 py-0 rounded-1.5 text-sm'
         }
         case 'md' : {
-          return 'px-3 py-0.5 rounded-2'
+          return 'px-3 py-0.5 rounded-2 text-base'
         }
         case 'lg': {
-          return 'px-4 py-1 rounded-2.5'
+          return 'px-4 py-1 rounded-2.5 text-xl'
         }
       }
     },
