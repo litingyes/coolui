@@ -2,6 +2,7 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { LAYER_IMPORTANT } from '../layers'
 
 export const base: UserShortcuts<Theme> = [
   [
@@ -18,6 +19,7 @@ export const base: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'form-<form-state>',
+      layer: LAYER_IMPORTANT,
     },
   ],
 ]

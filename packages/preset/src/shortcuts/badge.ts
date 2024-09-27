@@ -2,13 +2,25 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { LAYER_BASE, LAYER_ICON, LAYER_VARIANT } from '../layers'
 import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const badge: UserShortcuts<Theme> = [
-
+  [
+    'badge',
+    'inline-flex items-center gap-2 cursor-pointer align-middle text-base px-3 py-0.5 rounded-2 text-base [&+.badge,&+[badge]]:ml-2',
+    {
+      layer: LAYER_BASE,
+    },
+  ],
+  [
+    'badge-icon',
+    'size-7 justify-center p-1.5 text-base rounded-2',
+    {
+      layer: LAYER_ICON,
+    },
+  ],
   {
-    'badge': 'inline-flex items-center gap-2 cursor-pointer align-middle text-base px-3 py-0.5 rounded-2 text-base [&+.badge,&+[badge]]:ml-2',
-    'badge-icon': 'size-7 justify-center p-1.5 text-base rounded-2',
   },
   [
     /^badge-(sm|md|lg)$/,
@@ -27,6 +39,7 @@ export const badge: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'badge-<size>',
+      layer: LAYER_VARIANT,
     },
   ],
   // icon size
@@ -47,6 +60,7 @@ export const badge: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'badge-icon-<size>',
+      layer: LAYER_ICON,
     },
   ],
   // variant
@@ -72,6 +86,7 @@ export const badge: UserShortcuts<Theme> = [
         'badge-(solid|outline|soft)',
         'badge-(solid|outline|soft)-$colors',
       ],
+      layer: LAYER_VARIANT,
     },
   ],
 ]

@@ -2,12 +2,17 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { LAYER_BASE, LAYER_VARIANT } from '../layers'
 import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const input: UserShortcuts<Theme> = [
-  {
-    input: 'inline-flex items-center gap-2 align-middle cursor-text px-3 py-0.5 rounded-1.5 text-base [&+.input,&+[input]]:ml-2',
-  },
+  [
+    'input',
+    'inline-flex items-center gap-2 align-middle cursor-text px-3 py-0.5 rounded-1.5 text-base [&+.input,&+[input]]:ml-2',
+    {
+      layer: LAYER_BASE,
+    },
+  ],
   // size
   [
     /^input-(sm|md|lg)$/,
@@ -26,6 +31,7 @@ export const input: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'input-<size>',
+      layer: LAYER_VARIANT,
     },
   ],
   // variant
@@ -48,6 +54,7 @@ export const input: UserShortcuts<Theme> = [
         'input-(outline|soft)',
         'input-(outline|soft)-$colors',
       ],
+      layer: LAYER_VARIANT,
     },
   ],
 ]

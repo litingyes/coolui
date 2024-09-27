@@ -2,6 +2,7 @@ import type { Preflight } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { LAYER_PREFLIGHT } from './layers'
 
 export function createPreflights(): Preflight<Theme>[] {
   return [
@@ -11,6 +12,7 @@ export function createPreflights(): Preflight<Theme>[] {
 
         return tailwind
       },
+      layer: LAYER_PREFLIGHT,
     },
     {
       getCSS: () => {
@@ -18,6 +20,7 @@ export function createPreflights(): Preflight<Theme>[] {
 
         return tailwindCompat
       },
+      layer: LAYER_PREFLIGHT,
     },
   ]
 }

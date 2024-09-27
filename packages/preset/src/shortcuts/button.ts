@@ -2,13 +2,24 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { LAYER_BASE, LAYER_ICON, LAYER_VARIANT } from '../layers'
 import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const button: UserShortcuts<Theme> = [
-  {
-    'btn': 'inline-flex items-center gap-2 cursor-pointer text-sm align-middle transition duration-300 border border-solid border-cool-500 px-3 py-0.5 rounded-1.5 text-base active:(scale-106 border-primary-800) [&+.btn,&+[btn]]:ml-2',
-    'btn-disabled': '!pointer-events-none !grayscale-50',
-  },
+  [
+    'btn',
+    'inline-flex items-center gap-2 cursor-pointer text-sm align-middle transition duration-300 border border-solid border-cool-500 px-3 py-0.5 rounded-1.5 text-base active:(scale-106 border-primary-800) [&+.btn,&+[btn]]:ml-2',
+    {
+      layer: LAYER_BASE,
+    },
+  ],
+  [
+    'btn-icon',
+    'size-7 justify-center p-1.5 text-base rounded-1.5',
+    {
+      layer: LAYER_ICON,
+    },
+  ],
   // size
   [
     /^btn-(sm|md|lg)$/,
@@ -27,6 +38,7 @@ export const button: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'btn-<size>',
+      layer: LAYER_VARIANT,
     },
   ],
   // icon size
@@ -47,6 +59,7 @@ export const button: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'btn-icon-<size>',
+      layer: LAYER_ICON,
     },
   ],
   // variant
@@ -78,6 +91,7 @@ export const button: UserShortcuts<Theme> = [
         'btn-(solid|outline|ghost|soft|link)',
         'btn-(solid|outline|ghost|soft|link)-$colors',
       ],
+      layer: LAYER_VARIANT,
     },
   ],
 ]

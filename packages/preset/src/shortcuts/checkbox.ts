@@ -2,12 +2,17 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { LAYER_BASE, LAYER_VARIANT } from '../layers'
 import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const checkbox: UserShortcuts<Theme> = [
-  {
-    checkbox: 'relative cursor-pointer inline-block appearance-none m-0 text-primary-700 size-6 i-mingcute:square-line before:(absolute left-0 top-1/2 -translate-y-1/2 size-6)  checked:(text-primary-700 i-mingcute:checkbox-fill size-6) indeterminate:(text-primary-700 i-mingcute:minus-square-line size-6)',
-  },
+  [
+    'checkbox',
+    'relative cursor-pointer inline-block appearance-none m-0 text-primary-700 size-6 i-mingcute:square-line before:(absolute left-0 top-1/2 -translate-y-1/2 size-6)  checked:(text-primary-700 i-mingcute:checkbox-fill size-6) indeterminate:(text-primary-700 i-mingcute:minus-square-line size-6)',
+    {
+      layer: LAYER_BASE,
+    },
+  ],
   // size & variant
   [
     /^checkbox-(.*)$/,
@@ -30,6 +35,7 @@ export const checkbox: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'checkbox-(<size>|$colors)',
+      layer: LAYER_VARIANT,
     },
   ],
 ]

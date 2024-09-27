@@ -2,12 +2,17 @@
 
 import type { UserShortcuts } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
+import { LAYER_BASE, LAYER_VARIANT } from '../layers'
 import { resolveThemeKey, withThemeKey } from '../utils/theme'
 
 export const toggle: UserShortcuts<Theme> = [
-  {
-    toggle: 'relative inline-block cursor-pointer appearance-none m-0 w-9 h-5 p-0.5 rounded-full  bg-cool-200 transition-background-color duration-300  before:(content-[""] absolute left-0.5 top-1/2 -translate-y-1/2 size-4 rounded-full bg-white transition-transform duration-300) before:checked:(translate-x-4) checked:(bg-primary-500)',
-  },
+  [
+    'toggle',
+    'relative inline-block cursor-pointer appearance-none m-0 w-9 h-5 p-0.5 rounded-full  bg-cool-200 transition-background-color duration-300  before:(content-[""] absolute left-0.5 top-1/2 -translate-y-1/2 size-4 rounded-full bg-white transition-transform duration-300) before:checked:(translate-x-4) checked:(bg-primary-500)',
+    {
+      layer: LAYER_BASE,
+    },
+  ],
   // size & variant
   [
     /^toggle-(.*)$/,
@@ -30,6 +35,7 @@ export const toggle: UserShortcuts<Theme> = [
     },
     {
       autocomplete: 'toggle-(<size>|$colors)',
+      layer: LAYER_VARIANT,
     },
   ],
 ]

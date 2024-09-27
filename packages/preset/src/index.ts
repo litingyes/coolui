@@ -3,6 +3,7 @@ import type { IconsOptions } from 'unocss/preset-icons'
 import type { Theme } from 'unocss/preset-mini'
 import type { PresetUnoOptions } from 'unocss/preset-uno'
 import { definePreset, mergeDeep, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { layers } from './layers'
 import { createPreflights } from './preflights'
 import { shortcuts } from './shortcuts'
 import { createTheme } from './theme'
@@ -75,5 +76,6 @@ export default definePreset<Partial<PresetCoolOptions>, Theme>((options = {}) =>
       },
     },
     preflights: createPreflights(),
+    layers,
   }
 })
