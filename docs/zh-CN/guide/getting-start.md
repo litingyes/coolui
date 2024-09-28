@@ -32,52 +32,6 @@ export default defineConfig({
 })
 ```
 
-### 配置项
-
-```ts
-export interface PresetCoolOptions {
-  // Cool UI 依赖的主题样式组
-  theme: {
-    // default: blue
-    primary: string
-
-    // default: gray
-    cool: string
-
-    // default: #8c8c8c
-    info: string
-
-    // default: green
-    success: string
-
-    // default: yellow
-    warning: string
-
-    // default: red
-    error: string
-  }
-
-  // 对应的 preset options
-
-  // default: { dark: 'class' }
-  uno?: PresetUnoOptions
-
-  /*
-   * default:
-   * {
-   *  extraProperties: {
-   *   'display': 'inline-block',
-   *   'vertical-align': 'middle',
-   *  }
-   * }
-  */
-  icons?: IconsOptions
-
-  // default: {}
-  attributify?: AttributifyOptions
-}
-```
-
 ## 集成
 
 <div class="grid grid-cols-2 gap-6">
