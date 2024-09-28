@@ -112,6 +112,10 @@ export default defineConfig({
                 text: 'Getting start',
                 link: '/guide/getting-start',
               },
+              {
+                text: 'Preset',
+                link: '/guide/preset',
+              },
             ],
           },
           {
@@ -204,6 +208,10 @@ export default defineConfig({
               {
                 text: '快速开始',
                 link: '/zh-CN/guide/getting-start',
+              },
+              {
+                text: '预设',
+                link: '/zh-CN/guide/preset',
               },
             ],
           },
