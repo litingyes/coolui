@@ -14,7 +14,7 @@ hero:
       link: /zh-CN/guide/introduction
     - theme: alt
       text: 组件
-      link: /zh-CN/components/button
+      link: /zh-CN/atomization/display/badge
     - theme: alt
       text: Github
       link: https://github.com/litingyes/coolui.git

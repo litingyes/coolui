@@ -14,7 +14,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: Components
-      link: /components/button
+      link: /atomization/display/badge
     - theme: alt
       text: Github
       link: https://github.com/litingyes/coolui.git
