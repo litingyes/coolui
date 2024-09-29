@@ -8,7 +8,7 @@
 
 **Cool preset** customizes the following layers：
 
-<<< ../../packages/preset/src/layers.ts
+<<< ../../../packages/preset/src/layers.ts
 
 ## Options
 
