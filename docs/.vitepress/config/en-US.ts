@@ -27,73 +27,140 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
         ],
       },
       {
+        text: 'Vue',
+        items: [
+          {
+            text: 'Display',
+            link: '/vue/display/badge',
+          },
+          {
+            text: 'Interaction',
+            link: '/vue/interaction/button',
+          },
+          {
+            text: 'Form',
+            link: '/vue/form/input',
+          },
+        ],
+      },
+      {
         text: 'CHANGELOG',
         link: 'https://github.com/litingyes/coolui/blob/main/CHANGELOG.md',
         target: '_blank',
       },
     ],
-    sidebar: [
-      {
-        text: 'Guide',
-        items: [
-          {
-            text: 'Introduction',
-            link: '/guide/introduction',
-          },
-          {
-            text: 'Getting start',
-            link: '/guide/getting-start',
-          },
-          {
-            text: 'Preset',
-            link: '/guide/preset',
-          },
-        ],
-      },
-      {
-        text: 'Atomization',
-        items: [
-          {
-            text: 'Display',
-            items: [
-              {
-                text: 'Badge',
-                link: '/atomization/display/badge',
-              },
-            ],
-          },
-          {
-            text: 'Interaction',
-            items: [
-              {
-                text: 'Button',
-                link: '/atomization/interaction/button',
-              },
-            ],
-          },
-          {
-            text: 'Form',
-            items: [
-              {
-                text: 'Checkbox',
-                link: '/atomization/form/checkbox',
-              },
-              {
-                text: 'Input',
-                link: '/atomization/form/input',
-              },
-              {
-                text: 'Radio',
-                link: '/atomization/form/radio',
-              },
-              {
-                text: 'Toggle',
-                link: '/atomization/form/toggle',
-              },
-            ],
-          },
-        ],
-      },
-    ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: 'Guide',
+          items: [
+            {
+              text: 'Introduction',
+              link: '/guide/introduction',
+            },
+            {
+              text: 'Getting start',
+              link: '/guide/getting-start',
+            },
+            {
+              text: 'Preset',
+              link: '/guide/preset',
+            },
+          ],
+        },
+      ],
+      '/atomization/': [
+        {
+          text: 'Atomization',
+          items: [
+            {
+              text: 'Display',
+              items: [
+                {
+                  text: 'Badge',
+                  link: '/atomization/display/badge',
+                },
+              ],
+            },
+            {
+              text: 'Interaction',
+              items: [
+                {
+                  text: 'Button',
+                  link: '/atomization/interaction/button',
+                },
+              ],
+            },
+            {
+              text: 'Form',
+              items: [
+                {
+                  text: 'Checkbox',
+                  link: '/atomization/form/checkbox',
+                },
+                {
+                  text: 'Input',
+                  link: '/atomization/form/input',
+                },
+                {
+                  text: 'Radio',
+                  link: '/atomization/form/radio',
+                },
+                {
+                  text: 'Toggle',
+                  link: '/atomization/form/toggle',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      '/vue/': [
+        {
+          text: 'Atomization',
+          items: [
+            {
+              text: 'Display',
+              items: [
+                {
+                  text: 'Badge',
+                  link: '/vue/display/badge',
+                },
+              ],
+            },
+            {
+              text: 'Interaction',
+              items: [
+                {
+                  text: 'Button',
+                  link: '/vue/interaction/button',
+                },
+              ],
+            },
+            {
+              text: 'Form',
+              items: [
+                {
+                  text: 'Checkbox',
+                  link: '/vue/form/checkbox',
+                },
+                {
+                  text: 'Input',
+                  link: '/vue/form/input',
+                },
+                {
+                  text: 'Radio',
+                  link: '/vue/form/radio',
+                },
+                {
+                  text: 'Toggle',
+                  link: '/vue/form/toggle',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   },
 }
