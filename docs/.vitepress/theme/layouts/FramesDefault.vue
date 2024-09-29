@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import type { App } from 'vue'
+import { CoolUI } from '@coolui/vue'
 import { onMounted, ref } from 'vue'
-// @ts-expect-error whyframe
+// @ts-expect-error whyframe:app module
 import { createApp } from 'whyframe:app'
 
 defineOptions({
@@ -10,7 +12,11 @@ defineOptions({
 const containerRef = ref<HTMLDivElement>()
 
 onMounted(() => {
-  createApp(containerRef.value)
+  createApp(containerRef.value!, {
+    enhanceApp: (app: App) => {
+      app.use(CoolUI)
+    },
+  })
   document.body.setAttribute('data-frame', 'default')
 })
 </script>

@@ -8,5 +8,8 @@ export default antfu({
   unocss: true,
   ignores: [
     'pnpm-lock.yaml',
+    '**/node_modules/*',
+    '**/dist/*',
+    '**/cache/*',
   ],
 })

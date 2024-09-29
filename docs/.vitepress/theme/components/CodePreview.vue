@@ -3,6 +3,7 @@ import { useClipboard } from '@vueuse/core'
 import { getWhyframeSource } from '@whyframe/core/utils'
 import { createHighlighterCoreSync, createJavaScriptRegexEngine } from 'shiki/core'
 import html from 'shiki/langs/html.mjs'
+import vue from 'shiki/langs/vue.mjs'
 import catppuccinLatte from 'shiki/themes/catppuccin-latte.mjs'
 import catppuccinMacchiato from 'shiki/themes/catppuccin-macchiato.mjs'
 import { computed, ref } from 'vue'
@@ -11,12 +12,14 @@ defineOptions({
   name: 'CodePreview',
 })
 
-withDefaults(defineProps<{
+const props = withDefaults(defineProps<{
   title?: string
   src?: '/frames/default'
+  lang: 'html' | 'vue'
 }>(), {
   title: 'Code Preview',
   src: '/frames/default',
+  lang: 'html',
 })
 
 const iframeRef = ref<HTMLIFrameElement>()
@@ -27,13 +30,13 @@ const source = computed(() => {
 
 const showSource = ref(false)
 const highlighter = createHighlighterCoreSync({
-  langs: [html],
+  langs: [html, vue],
   themes: [catppuccinLatte, catppuccinMacchiato],
   engine: createJavaScriptRegexEngine(),
 })
 const highlightedSource = computed(() => {
   return highlighter.codeToHtml(source.value, {
-    lang: 'html',
+    lang: props.lang,
     themes: {
       light: catppuccinLatte,
       dark: catppuccinMacchiato,
@@ -61,22 +64,22 @@ function onLoad() {
         </iframe>
       </div>
     </div>
-    <div class="my-2 flex items-center justify-end">
+    <div class="flex items-center my-2 justify-end">
       <div btn="~ icon-md ghost" @click="copy(source)">
         <Transition>
           <i v-if="copied" class="i-carbon:checkmark-outline h-1em w-1em text-success" />
-          <i v-else class="i-ion:copy-outline h-1em w-1em" />
+          <i v-else class="h-1em w-1em i-ion:copy-outline" />
         </Transition>
       </div>
       <div btn="~ icon-md ghost" @click="showSource = !showSource">
         <Transition>
-          <i v-if="showSource" class="i-mdi:hide h-1em w-1em" />
-          <i v-else class="i-mdi:show-outline h-1em w-1em" />
+          <i v-if="showSource" class="h-1em w-1em i-mdi:hide" />
+          <i v-else class="h-1em w-1em i-mdi:show-outline" />
         </Transition>
       </div>
     </div>
     <section class="grid grid-rows-[0fr] transition-all duration-300" :class="{ 'grid-rows-[1fr]': showSource }">
-      <div class="overflow-hidden [&>pre]:(my-0 rounded p-2)" v-html="highlightedSource" />
+      <div class="overflow-hidden [&>pre]:my-0 [&>pre]:rounded [&>pre]:p-2" v-html="highlightedSource" />
     </section>
   </div>
 </template>

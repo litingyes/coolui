@@ -50,3 +50,11 @@
   </div>
 </div>
 ```
+
+## Vue
+
+```vue preview
+<CBadge class="test">
+aaa
+</CBadge>
+```

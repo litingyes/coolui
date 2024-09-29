@@ -12,6 +12,7 @@
     "iconify",
     "macchiato",
     "mingcute",
+    "mkdist",
     "Nuxt",
     "preflights",
     "shiki",
@@ -69,5 +70,9 @@
   ],
   "unocss.languageIds": [
     "typescript"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.workingDirectories": [
+    "packages/*"
   ]
 }

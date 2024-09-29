@@ -35,17 +35,28 @@ export default defineConfig({
 
 function codePreview(): Plugin {
   const regexp = /```html([\s\S]*?)```/gi
+  const regexpForVue = /```vue preview([\s\S]*?)```/gi
 
   return {
     name: 'code-preview',
     transform: (code, id) => {
-      if (!id.endsWith('.md') || !regexp.test(code)) {
+      if (!id.endsWith('.md')) {
         return
       }
 
-      return code.replaceAll(regexp, (_, source: string) => {
-        return `<CodePreview>${source.trim()}</CodePreview>`
-      })
+      if (regexp.test(code)) {
+        code = code.replaceAll(regexp, (_, source: string) => {
+          return `<CodePreview lang="html">${source.trim()}</CodePreview>`
+        })
+      }
+
+      if (regexpForVue.test(code)) {
+        code = code.replaceAll(regexpForVue, (_, source: string) => {
+          return `<CodePreview lang="vue">${source.trim()}</CodePreview>`
+        })
+      }
+
+      return code
     },
   }
 }
