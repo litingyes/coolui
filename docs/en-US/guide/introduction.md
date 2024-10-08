@@ -6,3 +6,8 @@
 
 - For front-end developers who like to participate in open source and develop their own WEB, an easy-to-use, convenient UI library that can cover most development scenarios can greatly improve development efficiency
 - There are many front-end frameworks at present, such as [Vue.js](https://vuejs.org/) and [React](https://react.dev/), but there is no simple, beautiful and universal style.
+
+## Why maintain component library for UI frameworks ?
+
+- In some complex UIs, using pure HTML would be very cumbersome. Using the component encapsulation of the UI framework can make the code more concise.
+- In some complex interactive logic, pure HTML + CSS cannot meet the requirements well, and cannot fully utilize some optimization features of the UI framework.
