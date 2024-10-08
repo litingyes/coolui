@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.1.0-beta.8
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.7...v0.1.0-beta.8)
+
+### 📖 Documentation
+
+- **fonts:** Add DM Sans and Noto Sans SC ([05d377f](https://github.com/litingyes/coolui/commit/05d377f))
+- Add preset doc ([82801d6](https://github.com/litingyes/coolui/commit/82801d6))
+- Move preset options position ([b3eaa71](https://github.com/litingyes/coolui/commit/b3eaa71))
+- **index:** Update components path ([e938821](https://github.com/litingyes/coolui/commit/e938821))
+- **start:** Remove unocss dep ([d6c98c7](https://github.com/litingyes/coolui/commit/d6c98c7))
+- **i18n:** Refactor struct ([bd91754](https://github.com/litingyes/coolui/commit/bd91754))
+- **vue:** Init ([3521561](https://github.com/litingyes/coolui/commit/3521561))
+- Update i18n for footer ([5e54008](https://github.com/litingyes/coolui/commit/5e54008))
+- **guide:** Add reason for maintain component library ([2415778](https://github.com/litingyes/coolui/commit/2415778))
+
+### 🏡 Chore
+
+- Init vue logic ([7f2ab67](https://github.com/litingyes/coolui/commit/7f2ab67))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.7
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.6...v0.1.0-beta.7)
