@@ -53,10 +53,6 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: '/logo.svg',
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present Liting',
-    },
     search: {
       provider: 'local',
     },
