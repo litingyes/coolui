@@ -162,6 +162,10 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
         },
       ],
     },
+    outline: {
+      label: 'Outline',
+      level: [2, 3],
+    },
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Liting',

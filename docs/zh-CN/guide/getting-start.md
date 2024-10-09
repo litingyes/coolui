@@ -32,6 +32,33 @@ export default defineConfig({
 })
 ```
 
+## UI 框架
+
+### Vue.js
+
+#### 安装
+
+::: code-group
+
+```bash pnpm
+pnpm add @coolui/vue
+```
+
+```bash npm
+npm install @coolui/vue
+```
+
+:::
+
+#### 配置
+
+```ts
+import { CoolUI } from '@coolui/vue'
+
+const app = createApp()
+app.use(CoolUI)
+```
+
 ## 集成
 
 <div class="grid grid-cols-2 gap-6">

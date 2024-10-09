@@ -32,6 +32,31 @@ export default defineConfig({
 })
 ```
 
+### Vue.js
+
+#### Installation
+
+::: code-group
+
+```bash pnpm
+pnpm add @coolui/vue
+```
+
+```bash npm
+npm install @coolui/vue
+```
+
+:::
+
+#### Configuration
+
+```ts
+import { CoolUI } from '@coolui/vue'
+
+const app = createApp()
+app.use(CoolUI)
+```
+
 ## Integrations
 
 <div class="grid grid-cols-2 gap-6">
