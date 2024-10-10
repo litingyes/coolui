@@ -14,7 +14,7 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
         items: [
           {
             text: 'Display',
-            link: '/atomization/display/badge',
+            link: '/atomization/display/avatar',
           },
           {
             text: 'Interaction',
@@ -76,6 +76,10 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
             {
               text: 'Display',
               items: [
+                {
+                  text: 'Avatar',
+                  link: '/atomization/display/avatar',
+                },
                 {
                   text: 'Badge',
                   link: '/atomization/display/badge',

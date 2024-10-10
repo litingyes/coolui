@@ -14,7 +14,7 @@ export const zhCN: LocaleConfig<DefaultTheme.Config>[0] = {
         items: [
           {
             text: '显示',
-            link: '/zh-CN/atomization/display/badge',
+            link: '/zh-CN/atomization/display/avatar',
           },
           {
             text: '交互',
@@ -76,6 +76,10 @@ export const zhCN: LocaleConfig<DefaultTheme.Config>[0] = {
             {
               text: '显示',
               items: [
+                {
+                  text: '头像 Avatar',
+                  link: '/zh-CN/atomization/display/avatar',
+                },
                 {
                   text: '徽章 Badge',
                   link: '/zh-CN/atomization/display/badge',

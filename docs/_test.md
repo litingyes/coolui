@@ -9,6 +9,9 @@
     <div badge="~ icon-sm outline">
       <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
     </div>
+    <div avatar="~ sm">
+      <img src="https://github.com/litingyes.png" alt="CoolUI" />
+    </div>
     <button btn="~ sm">sm</button>
     <input checkbox="~ sm" type="checkbox" />
     <input input="~ sm outline" />
@@ -20,6 +23,9 @@
     <div badge="~ icon-md outline">
       <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
     </div>
+    <div avatar="~ md">
+      <img src="https://github.com/litingyes.png" alt="CoolUI" />
+    </div>
     <button btn="~ md">md</button>
     <input checkbox="~ md" type="checkbox" />
     <input input="~ md outline" />
@@ -30,6 +36,9 @@
     <div badge="~ solid">default</div>
     <div badge="~ icon outline">
       <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
+    </div>
+    <div avatar="~ lg">
+      <img src="https://github.com/litingyes.png" alt="CoolUI" />
     </div>
     <button btn="~">default</button>
     <input checkbox="~" type="checkbox" />
@@ -49,12 +58,4 @@
     <input toggle="~ lg" type="checkbox" />
   </div>
 </div>
-```
-
-## Vue
-
-```vue
-<CBadge class="test">
-  aaa
-</CBadge>
 ```
