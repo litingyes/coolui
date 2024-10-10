@@ -22,7 +22,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    }
+    },
+    "./global-components.d.ts": "./dist/global-components.d.ts"
   },
   "scripts": {
     "dev": "unbuild  --watch",

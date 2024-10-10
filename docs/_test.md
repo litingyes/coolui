@@ -53,8 +53,8 @@
 
 ## Vue
 
-```vue preview
+```vue
 <CBadge class="test">
-aaa
+  aaa
 </CBadge>
 ```
