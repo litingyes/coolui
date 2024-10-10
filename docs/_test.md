@@ -2,7 +2,7 @@
 
 ## size
 
-```html
+```html preview
 <div class="flex flex-col items-center gap-2">
   <div class="flex items-center gap-2 flex-wrap">
     <div badge="~ sm solid">sm</div>

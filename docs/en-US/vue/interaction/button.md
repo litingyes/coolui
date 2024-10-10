@@ -2,7 +2,7 @@
 
 ## Size
 
-```html
+```html preview
 <button btn="~ sm">sm</button>
 <button btn="~ md">md</button>
 <button btn="~ lg">lg</button>
@@ -10,7 +10,7 @@
 
 ## Variant
 
-```html
+```html preview
 <button btn="~ md">default</button>
 <button btn="~ md solid">solid</button>
 <button btn="~ md outline">outline</button>
@@ -21,7 +21,7 @@
 
 ## Icon
 
-```html
+```html preview
 <button btn="~ icon-sm">
   <i class="i-carbon:color-palette w-1em h-1em" />
 </button>
@@ -37,7 +37,7 @@
 
 ## Disabled
 
-```html
+```html preview
 <button btn="~ md solid disabled">solid</button>
 <button btn="~ md outline disabled">outline</button>
 <button btn="~ md soft disabled">soft</button>
@@ -47,7 +47,7 @@
 
 ## Colors
 
-```html
+```html preview
 <button btn="~ md solid-red">solid</button>
 <button btn="~ md outline-yellow">outline</button>
 <button btn="~ md soft-green">soft</button>
@@ -57,7 +57,7 @@
 
 ## Compose
 
-```html
+```html preview
 <button btn="~ md solid" class="rounded-full">round</button>
 <button btn="~ md outline" class="border-dashed">dashed</button>
 <button btn="~ md soft">

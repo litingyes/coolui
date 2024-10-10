@@ -2,7 +2,7 @@
 
 ## Size
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input name="size" radio="~ sm" type="radio" id="size-sm" />
@@ -21,7 +21,7 @@
 
 ## Color
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input name="color" radio="~ sm red" type="radio" id="color-sm" />
@@ -40,7 +40,7 @@
 
 ## Readonly
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-readonly">
   <div class="flex items-center gap-1">
     <input name="readonly" radio="~ sm" type="radio" id="readonly-sm" />
@@ -59,7 +59,7 @@
 
 ## Disabled
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-disabled">
   <div class="flex items-center gap-1">
     <input name="disabled" radio="~ sm" type="radio" id="disabled-sm" />
@@ -78,7 +78,7 @@
 
 ## Compose
 
-```html
+```html preview
 <div btn="~ md soft">
   <input radio="~ md" type="radio" id="extend-button" />
   <label for="extend-button">With button</label>

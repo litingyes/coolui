@@ -2,7 +2,7 @@
 
 ## Size
 
-```html
+```html preview
 <div avatar="~ sm">
   <img src="https://github.com/litingyes.png" alt="CoolUI" />
 </div>
@@ -18,7 +18,7 @@
 
 ## Rounded
 
-```html
+```html preview
 <div avatar="~ sm" rounded-full>
   <img src="https://github.com/litingyes.png" alt="CoolUI" />
 </div>
@@ -34,7 +34,7 @@
 
 ## Compose
 
-```html
+```html preview
 <div avatar class="i-fluent:triangle-28-filled?mask size-10">
   <img src="https://github.com/litingyes.png" alt="CoolUI" />
 </div>

@@ -34,7 +34,7 @@ export default defineConfig({
 })
 
 function codePreview(): Plugin {
-  const regexp = /```html([\s\S]*?)```/gi
+  const regexpForHtml = /```html preview([\s\S]*?)```/gi
   const regexpForVue = /```vue preview([\s\S]*?)```/gi
 
   return {
@@ -44,8 +44,8 @@ function codePreview(): Plugin {
         return
       }
 
-      if (regexp.test(code)) {
-        code = code.replaceAll(regexp, (_, source: string) => {
+      if (regexpForHtml.test(code)) {
+        code = code.replaceAll(regexpForHtml, (_, source: string) => {
           return `<CodePreview lang="html">${source.trim()}</CodePreview>`
         })
       }

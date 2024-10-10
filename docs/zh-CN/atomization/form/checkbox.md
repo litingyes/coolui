@@ -2,7 +2,7 @@
 
 ## 大小
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="size-sm" />
@@ -21,7 +21,7 @@
 
 ## 选中状态
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="status-sm" />
@@ -40,7 +40,7 @@
 
 ## 只读
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-readonly">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="readonly-sm" />
@@ -59,7 +59,7 @@
 
 ## 禁用
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-disabled">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="disabled-sm" />
@@ -78,7 +78,7 @@
 
 ## 颜色
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm red" type="checkbox" id="color-sm" />
@@ -97,7 +97,7 @@
 
 ## 组合
 
-```html
+```html preview
 <button btn="~ md soft">
   <input checkbox="~ md" type="checkbox" id="extend-button" />
   <label for="extend-button">With button</label>

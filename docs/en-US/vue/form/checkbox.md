@@ -2,7 +2,7 @@
 
 ## Size
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="size-sm" />
@@ -21,7 +21,7 @@
 
 ## Check status
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="status-sm" />
@@ -40,7 +40,7 @@
 
 ## Readonly
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-readonly">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="readonly-sm" />
@@ -59,7 +59,7 @@
 
 ## Disabled
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-disabled">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm" type="checkbox" id="disabled-sm" />
@@ -78,7 +78,7 @@
 
 ## Colors
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input checkbox="~ sm red" type="checkbox" id="color-sm" />
@@ -97,7 +97,7 @@
 
 ## Compose
 
-```html
+```html preview
 <button btn="~ md soft">
   <input checkbox="~ md" type="checkbox" id="extend-button" />
   <label for="extend-button">With button</label>

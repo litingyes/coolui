@@ -2,7 +2,7 @@
 
 ## 大小
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input toggle="~ sm" type="checkbox" id="size-sm" />
@@ -21,7 +21,7 @@
 
 ## 只读
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-readonly">
   <div class="flex items-center gap-1">
     <input toggle="~ sm" type="checkbox" id="size-sm" />
@@ -40,7 +40,7 @@
 
 ## 禁用
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4 form-disabled">
   <div class="flex items-center gap-1">
     <input toggle="~ sm" type="checkbox" id="size-sm" />
@@ -59,7 +59,7 @@
 
 ## 颜色
 
-```html
+```html preview
 <fieldset class="border-none flex items-center gap-4">
   <div class="flex items-center gap-1">
     <input toggle="~ sm red" type="checkbox" id="size-sm" />
@@ -78,7 +78,7 @@
 
 ## 组合
 
-```html
+```html preview
 <div class="flex items-center gap-1">
   <input
     toggle="~ md "

@@ -2,7 +2,7 @@
 
 ## 大小
 
-```html
+```html preview
 <input input="~ sm outline" value="sm" />
 <input input="~ md outline" value="md" />
 <input input="~ lg outline" value="lg" />
@@ -10,21 +10,21 @@
 
 ## 样式
 
-```html
+```html preview
 <input input="~ sm outline" value="outline" />
 <input input="~ md soft" value="soft" />
 ```
 
 ## Placeholder
 
-```html
+```html preview
 <input input="~ sm outline" placeholder="input" />
 <input input="~ md soft" placeholder="input" />
 ```
 
 ## 只读
 
-```html
+```html preview
 <div class="form-readonly">
   <input input="~ sm outline readonly" value="outline" />
   <input input="~ md soft readonly" value="soft" />
@@ -33,7 +33,7 @@
 
 ## 禁用
 
-```html
+```html preview
 <div class="form-disabled">
   <input input="~ sm outline disabled" />
   <input input="~ md soft disabled" />
@@ -42,14 +42,14 @@
 
 ## 颜色
 
-```html
+```html preview
 <input input="~ sm outline-red" value="outline" />
 <input input="~ md soft-yellow" value="soft" />
 ```
 
 ## 组合
 
-```html
+```html preview
 <div input="~ md outline">
   <i class="i-vscode-icons:file-type-unocss w-1em h-1em" />
   <input value="Outline with icon" />

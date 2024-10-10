@@ -2,7 +2,7 @@
 
 ## 大小
 
-```html
+```html preview
 <div badge="~ sm solid">sm</div>
 <div badge="~ md solid">md</div>
 <div badge="~ lg solid">lg</div>
@@ -10,7 +10,7 @@
 
 ## 样式
 
-```html
+```html preview
 <div badge="~ md solid">solid</div>
 <div badge="~ md outline">outline</div>
 <div badge="~ md soft">soft</div>
@@ -18,7 +18,7 @@
 
 ## 图标
 
-```html
+```html preview
 <div badge="~ icon-sm solid">
   <i class="i-ion:logo-css3 w-1em h-1em"></i>
 </div>
@@ -32,7 +32,7 @@
 
 ## 颜色
 
-```html
+```html preview
 <div badge="~ md solid-red">solid</div>
 <div badge="~ md outline-yellow">outline</div>
 <div badge="~ md soft-green">soft</div>
@@ -40,7 +40,7 @@
 
 ## 组合
 
-```html
+```html preview
 <div badge="~ md solid" class="rounded-full">round</div>
 <div badge="~ md outline" class="border-dashed">dashed</div>
 <div badge="~ md soft">
