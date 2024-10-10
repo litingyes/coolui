@@ -31,7 +31,7 @@ export const zhCN: LocaleConfig<DefaultTheme.Config>[0] = {
         items: [
           {
             text: '显示',
-            link: '/zh-CN/vue/display/badge',
+            link: '/zh-CN/vue/display/avatar',
           },
           {
             text: '交互',
@@ -121,46 +121,45 @@ export const zhCN: LocaleConfig<DefaultTheme.Config>[0] = {
       ],
       '/zh-CN/vue/': [
         {
-          text: '原子化',
+          text: '显示',
           items: [
             {
-              text: '显示',
-              items: [
-                {
-                  text: '徽章 Badge',
-                  link: '/zh-CN/vue/display/badge',
-                },
-              ],
+              text: '头像 Avatar',
+              link: '/zh-CN/vue/display/avatar',
             },
             {
-              text: '交互',
-              items: [
-                {
-                  text: '按钮 Button',
-                  link: '/zh-CN/vue/interaction/button',
-                },
-              ],
+              text: '徽章 Badge',
+              link: '/zh-CN/vue/display/badge',
+            },
+          ],
+        },
+        {
+          text: '交互',
+          items: [
+            {
+              text: '按钮 Button',
+              link: '/zh-CN/vue/interaction/button',
+            },
+          ],
+        },
+        {
+          text: '表单',
+          items: [
+            {
+              text: '复选框 Checkbox',
+              link: '/zh-CN/vue/form/checkbox',
             },
             {
-              text: '表单',
-              items: [
-                {
-                  text: '复选框 Checkbox',
-                  link: '/zh-CN/vue/form/checkbox',
-                },
-                {
-                  text: '输入框 Input',
-                  link: '/zh-CN/vue/form/input',
-                },
-                {
-                  text: '单选框 Radio',
-                  link: '/zh-CN/vue/form/radio',
-                },
-                {
-                  text: '开关 Toggle',
-                  link: '/zh-CN/vue/form/toggle',
-                },
-              ],
+              text: '输入框 Input',
+              link: '/zh-CN/vue/form/input',
+            },
+            {
+              text: '单选框 Radio',
+              link: '/zh-CN/vue/form/radio',
+            },
+            {
+              text: '开关 Toggle',
+              link: '/zh-CN/vue/form/toggle',
             },
           ],
         },

@@ -31,7 +31,7 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
         items: [
           {
             text: 'Display',
-            link: '/vue/display/badge',
+            link: '/vue/display/avatar',
           },
           {
             text: 'Interaction',
@@ -121,46 +121,45 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
       ],
       '/vue/': [
         {
-          text: 'Atomization',
+          text: 'Display',
           items: [
             {
-              text: 'Display',
-              items: [
-                {
-                  text: 'Badge',
-                  link: '/vue/display/badge',
-                },
-              ],
+              text: 'Avatar',
+              link: '/vue/display/avatar',
             },
             {
-              text: 'Interaction',
-              items: [
-                {
-                  text: 'Button',
-                  link: '/vue/interaction/button',
-                },
-              ],
+              text: 'Badge',
+              link: '/vue/display/badge',
+            },
+          ],
+        },
+        {
+          text: 'Interaction',
+          items: [
+            {
+              text: 'Button',
+              link: '/vue/interaction/button',
+            },
+          ],
+        },
+        {
+          text: 'Form',
+          items: [
+            {
+              text: 'Checkbox',
+              link: '/vue/form/checkbox',
             },
             {
-              text: 'Form',
-              items: [
-                {
-                  text: 'Checkbox',
-                  link: '/vue/form/checkbox',
-                },
-                {
-                  text: 'Input',
-                  link: '/vue/form/input',
-                },
-                {
-                  text: 'Radio',
-                  link: '/vue/form/radio',
-                },
-                {
-                  text: 'Toggle',
-                  link: '/vue/form/toggle',
-                },
-              ],
+              text: 'Input',
+              link: '/vue/form/input',
+            },
+            {
+              text: 'Radio',
+              link: '/vue/form/radio',
+            },
+            {
+              text: 'Toggle',
+              link: '/vue/form/toggle',
             },
           ],
         },
