@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.1.0-beta.9
+
+[compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.8...v0.1.0-beta.9)
+
+### 🚀 Enhancements
+
+- **vue:** Export global-components ([ba09b21](https://github.com/litingyes/coolui/commit/ba09b21))
+- **preset:** Add avatar ([8a4cff6](https://github.com/litingyes/coolui/commit/8a4cff6))
+- **vue:** Add avatar ([3ff803b](https://github.com/litingyes/coolui/commit/3ff803b))
+
+### 💅 Refactors
+
+- **vue:** Remove components which is single component ([b2fc93b](https://github.com/litingyes/coolui/commit/b2fc93b))
+
+### 📖 Documentation
+
+- **vue:** Add vue guide ([070f24e](https://github.com/litingyes/coolui/commit/070f24e))
+- **preview:** Add preview tag for html demo ([52e71af](https://github.com/litingyes/coolui/commit/52e71af))
+- **vue:** Use html code block for vue demo ([12c26aa](https://github.com/litingyes/coolui/commit/12c26aa))
+- **code block:** Add overflow-x ([9e03684](https://github.com/litingyes/coolui/commit/9e03684))
+
+### ❤️ Contributors
+
+- Liting ([@litingyes](http://github.com/litingyes))
+
 ## v0.1.0-beta.8
 
 [compare changes](https://github.com/litingyes/coolui/compare/v0.1.0-beta.7...v0.1.0-beta.8)
