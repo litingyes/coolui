@@ -33,14 +33,6 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
             text: 'Display',
             link: '/vue/display/avatar',
           },
-          {
-            text: 'Interaction',
-            link: '/vue/interaction/button',
-          },
-          {
-            text: 'Form',
-            link: '/vue/form/input',
-          },
         ],
       },
       {
@@ -126,40 +118,6 @@ export const enUS: LocaleConfig<DefaultTheme.Config>[0] = {
             {
               text: 'Avatar',
               link: '/vue/display/avatar',
-            },
-            {
-              text: 'Badge',
-              link: '/vue/display/badge',
-            },
-          ],
-        },
-        {
-          text: 'Interaction',
-          items: [
-            {
-              text: 'Button',
-              link: '/vue/interaction/button',
-            },
-          ],
-        },
-        {
-          text: 'Form',
-          items: [
-            {
-              text: 'Checkbox',
-              link: '/vue/form/checkbox',
-            },
-            {
-              text: 'Input',
-              link: '/vue/form/input',
-            },
-            {
-              text: 'Radio',
-              link: '/vue/form/radio',
-            },
-            {
-              text: 'Toggle',
-              link: '/vue/form/toggle',
             },
           ],
         },
